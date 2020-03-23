@@ -1,5 +1,5 @@
 'use strict';
-customElements.define('cc-countdown',class CcCountdownComponent extends HTMLElement {
+customElements.define('cc-countdown', class CcCountdownComponent extends HTMLElement {
     constructor() {
         super();
 
@@ -17,6 +17,10 @@ customElements.define('cc-countdown',class CcCountdownComponent extends HTMLElem
         this._currentValue = 0;
         this._handle = -1;
         this._countDownRunning = false;
+    }
+
+    static get observedAttributes() {
+        return ['duration', 'purpose'];
     }
 
     connectedCallback() {
@@ -59,10 +63,6 @@ customElements.define('cc-countdown',class CcCountdownComponent extends HTMLElem
         this._currentValueParagraph.innerText = this._currentValue;
     }
 
-    static get observedAttributes() {
-        return ['duration', 'purpose'];
-    }
-
     attributeChangedCallback(name, oldValue, newValue) {
         console.log('attribute changed', name, oldValue, newValue);
 
@@ -87,7 +87,7 @@ customElements.define('cc-countdown',class CcCountdownComponent extends HTMLElem
     _setPurpose(value) {
         if (value === null) return;
         this._purpose = value;
-        if(this._purposeTitle) {
+        if (this._purposeTitle) {
             this._purposeTitle.innerHTML = value;
         }
     }

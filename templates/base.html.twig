@@ -7,8 +7,6 @@
     <meta name="author" content="">
     <title>{% block title %}Home!{% endblock %}</title>
     {% block stylesheets %}
-        {# <link rel="stylesheet" href="{{ asset('build/app.css') }}">#}
-
         {{ encore_entry_link_tags('mainstyle') }}
     {% endblock %}
 </head>
@@ -30,13 +28,12 @@
                 <a class="nav-link" href="#">Tools</a>
             </li>
         </ul>
-{#        <div class="my-2 my-lg-0">#}
+        <div class="my-2 my-lg-0">
 
-{#        </div>#}
+        </div>
     </div>
 </nav>
 {% block body %}
-
 {% endblock %}
 <footer class="py-5 bg-dark">
     <div class="container">
@@ -44,9 +41,7 @@
     </div>
 </footer>
 {% block javascripts %}
-    {#<script src="{{  asset('build/app.js') }}" type="module"></script>#}
     {{ encore_entry_script_tags('app') }}
 {% endblock %}
-
 </body>
 </html>

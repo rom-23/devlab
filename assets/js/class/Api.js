@@ -4,12 +4,12 @@ let Api = class {
 
     constructor(url) {
         this._url = url;
-this._apiResponse = [];
-this._chaine='';
+        this._apiResponse = [];
+        this._chaine = '';
         this.tev2 = '';
-        this._template=document.createElement('code');
+        this._template = document.createElement('code');
         this._myHeaders = new Headers({
-             "Content-Type": "application/json",
+            "Content-Type": "application/json",
             // "Access-Control-Allow-Credentials": true,
             // "Access-Control-Allow-Origin": "*"
         });
@@ -19,7 +19,7 @@ this._chaine='';
             //mode: 'cors',
             cache: 'default'
         };
-         this.fetchJSON();
+        this.fetchJSON();
     }
 
 
@@ -50,10 +50,10 @@ this._chaine='';
                 this._apiResponse.push(value.projectName);
                 console.log(this._template);
 
-this._template.innerHTML = `
+                this._template.innerHTML = `
 ${value.projectName}
 `;
-               // console.log(this._template);
+                // console.log(this._template);
             }))
             .catch(this.logError)
     }

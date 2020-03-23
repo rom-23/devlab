@@ -1,5 +1,5 @@
 //import axios from 'axios';
-//import Api from './Api';
+//import Api from '../class/Api';
 import MYSAMPLEAPP from '../class/ApiClass';
 //const Api = require('../class/ApiClass');
 customElements.define('project-card', class ProjectCard extends HTMLElement {
@@ -38,12 +38,12 @@ customElements.define('project-card', class ProjectCard extends HTMLElement {
     }
 
     connectedCallback() {
-         let myHeaders = new Headers({
+        let myHeaders = new Headers({
             "Content-Type": "application/json",
             // "Access-Control-Allow-Credentials": true,
-             "Access-Control-Allow-Origin": "*"
+            "Access-Control-Allow-Origin": "*"
         });
-         let myInit = {
+        let myInit = {
             method: 'GET',
             headers: myHeaders,
             mode: 'cors',
@@ -69,20 +69,20 @@ customElements.define('project-card', class ProjectCard extends HTMLElement {
 //alert(newProduct.doTaxCalculations);
 
             //AJAX with Fetch Api
-                 fetch(urlToCall, myInit)
-                    .then(response => {
-                        if (response.ok) {
-                            response.json().then(data=>
-                                Object.entries(JSON.parse(data.results)).forEach(([key, value]) => {
-                                    result.innerHTML += `<p><a href="project/${value.id}">${value.projectName}</a></p>`;
-                                })) } else {
-                            throw Error(response.statusText);
-                        }
-                    })
-                    .catch(error => {
-                        alert(error.message);
-                    });
-
+            fetch(urlToCall, myInit)
+                .then(response => {
+                    if (response.ok) {
+                        response.json().then(data =>
+                            Object.entries(JSON.parse(data.results)).forEach(([key, value]) => {
+                                result.innerHTML += `<p><a href="project/${value.id}">${value.projectName}</a></p>`;
+                            }))
+                    } else {
+                        throw Error(response.statusText);
+                    }
+                })
+                .catch(error => {
+                    alert(error.message);
+                });
 
 
             // AJAX with Vanilla JS -------------------------------------

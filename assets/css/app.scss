@@ -1,6 +1,6 @@
 
 
-//$primary: darken(#8e0cca, 20%);
+$primary: darken(#8e0cca, 20%);
 $colorhead: #e9ffa4;
 .sidebar{
   border: 1px solid grey;
@@ -12,7 +12,7 @@ $colorhead: #e9ffa4;
   background: rgba(201, 208, 215, 0.57);
   padding:5em;
   .btn{
-    background: rgba(143, 87, 189, 0.82);
+    background: rgba(189, 15, 26, 0.82);
     &:hover{
       background: #AAAAAA;
     }
@@ -20,6 +20,7 @@ $colorhead: #e9ffa4;
   @extend .container-fluid;
 }
 .mainproject{
+
   @extend .container;
 }
 .maintitle{
@@ -31,9 +32,12 @@ header{
 }
 
 
-
 @import "~bootstrap/scss/bootstrap";
+@import "jumbotron";
+@import "experience";
+@import "profil";
 //@import '~bootstrap/scss/_navbar';
 //@import '~bootstrap/scss/_card';
+
 
 

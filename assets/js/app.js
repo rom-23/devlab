@@ -1,24 +1,15 @@
-/*
- * Welcome to your app's main JavaScript file!
- *
- * We recommend including the built version of this JavaScript file
- * (and its CSS file) in your base layout (base.html.twig).
- */
+import Vue from 'vue';
+import App from './App.vue';
 
-// any CSS you import will output into a single css file (app.scss in this case)
-//import '../css/app.scss';
+Vue.config.productionTip = false;
 
-// Need jQuery? Install it with "yarn add jquery", then uncomment to import it.
-// import $ from 'jquery';
+new Vue({
+    render: h => h(App),
+}).$mount('#app');
 
-// alert('Hello Webpack Encore! Edit me in assets/js/app.js');
-
-
-import './customElements/Module';
-import './components/project-details.component';
-import './components/cc-countdown.component';
-import './components/project-card.component';
-
+import './webComponents/project-details.component';
+import './webComponents/cc-countdown.component';
+import './webComponents/project-card.component';
 
 
 // document.querySelector('#but').addEventListener('click',function(){
@@ -26,9 +17,3 @@ import './components/project-card.component';
 //     const templateContent = template.content;
 //     document.querySelector('#displayBase').appendChild((templateContent.cloneNode(true)));
 // });
-
-const test = require('./customElements/Module.js');
-// alert(test.testAgain(5));
-// let t = new test('rom');
-// console.log(t.greet());
-//console.log(test.dataBaseAccess());

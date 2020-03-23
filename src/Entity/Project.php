@@ -2,6 +2,7 @@
 
 namespace App\Entity;
 
+use ApiPlatform\Core\Annotation\ApiResource;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
@@ -9,6 +10,7 @@ use Symfony\Component\Serializer\Annotation\Groups;
 
 /**
  * @ORM\Entity(repositoryClass="App\Repository\ProjectRepository")
+ * @ApiResource
  */
 class Project
 {
@@ -16,36 +18,43 @@ class Project
      * @ORM\Id()
      * @ORM\GeneratedValue()
      * @ORM\Column(type="integer")
+     * @Groups("project:read")
      */
     private $id;
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Groups("project:read")
      */
     private $projectName;
 
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
+     * @Groups("project:read")
      */
     private $projectDesc;
 
     /**
      * @ORM\Column(type="datetime")
+     * @Groups("project:read")
      */
     private $createdAt;
 
     /**
      * @ORM\ManyToMany(targetEntity="App\Entity\Tools", mappedBy="project")
+     * @Groups("project:read")
      */
     private $tools;
 
     /**
      * @ORM\ManyToMany(targetEntity="App\Entity\Technology", mappedBy="project")
+     * @Groups("project:read")
      */
     private $technologies;
 
     /**
      * @ORM\ManyToMany(targetEntity="App\Entity\Picture", mappedBy="project")
+     * @Groups("project:read")
      */
     private $pictures;
 

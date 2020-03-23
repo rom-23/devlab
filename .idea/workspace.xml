@@ -2,7 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df923285-fd74-4722-a48b-203362445aa5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Controller/ApiProjectsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/devLab.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/devLab.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/components/Api.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/class/Api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/components/cc-countdown.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/webComponents/cc-countdown.component.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/components/project-card.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/webComponents/project-card.component.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/components/project-details.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/webComponents/project-details.component.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/components/user-card.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/webComponents/user-card.component.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/customElements/Module.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/ProjectController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ProjectController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Picture.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Picture.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Project.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Project.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Technology.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Technology.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Tools.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Tools.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/pages/Home.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pages/Home.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,6 +156,11 @@
       <path value="$PROJECT_DIR$/vendor/symfony/webpack-encore-bundle" />
       <path value="$PROJECT_DIR$/vendor/knplabs/knp-paginator-bundle" />
       <path value="$PROJECT_DIR$/vendor/knplabs/knp-components" />
+      <path value="$PROJECT_DIR$/vendor/nelmio/cors-bundle" />
+      <path value="$PROJECT_DIR$/vendor/api-platform/api-pack" />
+      <path value="$PROJECT_DIR$/vendor/api-platform/core" />
+      <path value="$PROJECT_DIR$/vendor/willdurand/negotiation" />
+      <path value="$PROJECT_DIR$/vendor/fig/link-util" />
     </include_path>
   </component>
   <component name="ProjectId" id="1XiPt0tc6RWRDohF7gh2f6y4Ehz" />
@@ -142,18 +173,24 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Controller" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/public/images" />
       <recent name="$PROJECT_DIR$/src/Controller" />
+      <recent name="$PROJECT_DIR$/src/Entity" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/assets/images" />
+      <recent name="$PROJECT_DIR$/assets/js/components" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/templates/pages" />
-      <recent name="$PROJECT_DIR$/public" />
+      <recent name="$PROJECT_DIR$/assets/js/class" />
+      <recent name="$PROJECT_DIR$/assets/js/vuejs-components" />
+      <recent name="$PROJECT_DIR$/assets" />
+      <recent name="$PROJECT_DIR$/assets/css/images" />
+      <recent name="$PROJECT_DIR$/assets/css" />
     </key>
   </component>
   <component name="ServiceViewManager">
@@ -194,7 +231,16 @@
       <workItem from="1582404878030" duration="3311000" />
       <workItem from="1582410362855" duration="1899000" />
       <workItem from="1584711254673" duration="18000" />
-      <workItem from="1584712945362" duration="575000" />
+      <workItem from="1584712945362" duration="674000" />
+      <workItem from="1584714799008" duration="652000" />
+      <workItem from="1584744358267" duration="4113000" />
+      <workItem from="1584749704749" duration="575000" />
+      <workItem from="1584750543752" duration="2855000" />
+      <workItem from="1584800809542" duration="608000" />
+      <workItem from="1584811381760" duration="1260000" />
+      <workItem from="1584861581321" duration="23053000" />
+      <workItem from="1584955984330" duration="2971000" />
+      <workItem from="1584981881130" duration="4628000" />
     </task>
     <servers />
   </component>
@@ -206,6 +252,10 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="588" y="201" width="800" height="684" key="#Composer/1920.0.1920.1080/67.27.1853.1053@67.27.1853.1053" timestamp="1581526194348" />
+    <state x="699" y="671" width="579" height="423" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1584874212096">
+      <screen x="0" y="339" width="1920" height="1080" />
+    </state>
+    <state x="699" y="671" width="579" height="423" key="#com.intellij.fileTypes.FileTypeChooser/1920.0.1920.1080/0.339.1920.1080@0.339.1920.1080" timestamp="1584874212096" />
     <state x="801" y="259" width="374" height="569" key="#com.intellij.ide.util.MemberChooser" timestamp="1582239642416">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
@@ -214,15 +264,33 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="515" y="17" width="937" height="1060" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/1920.0.1920.1080/67.27.1853.1053@67.27.1853.1053" timestamp="1581709845068" />
-    <state x="726" y="298" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1581962625644">
-      <screen x="67" y="27" width="1853" height="1053" />
+    <state x="683" y="617" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1584986229791">
+      <screen x="0" y="339" width="1920" height="1080" />
     </state>
+    <state x="683" y="617" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/1920.0.1920.1080/0.339.1920.1080@0.339.1920.1080" timestamp="1584986229791" />
     <state x="726" y="298" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/1920.0.1920.1080/67.27.1853.1053@67.27.1853.1053" timestamp="1581962625644" />
-    <state x="2655" y="267" width="424" height="491" key="FileChooserDialogImpl" timestamp="1584711270846">
-      <screen x="1920" y="0" width="1920" height="1080" />
+    <state x="735" y="606" width="424" height="491" key="FileChooserDialogImpl" timestamp="1584986471718">
+      <screen x="0" y="339" width="1920" height="1080" />
     </state>
+    <state x="735" y="606" width="424" height="491" key="FileChooserDialogImpl/1920.0.1920.1080/0.339.1920.1080@0.339.1920.1080" timestamp="1584986471718" />
     <state x="2655" y="267" width="424" height="491" key="FileChooserDialogImpl/1920.0.1920.1080/67.27.1853.1053@1920.0.1920.1080" timestamp="1584711270846" />
-    <state x="776" y="287" width="424" height="520" key="FileChooserDialogImpl/1920.0.1920.1080/67.27.1853.1053@67.27.1853.1053" timestamp="1582403729809" />
+    <state x="776" y="287" width="424" height="520" key="FileChooserDialogImpl/1920.0.1920.1080/67.27.1853.1053@67.27.1853.1053" timestamp="1584748999417" />
+    <state width="1807" height="261" key="GridCell.Tab.0.bottom" timestamp="1584983800195">
+      <screen x="0" y="339" width="1920" height="1080" />
+    </state>
+    <state width="1807" height="261" key="GridCell.Tab.0.bottom/1920.0.1920.1080/0.339.1920.1080@0.339.1920.1080" timestamp="1584983800195" />
+    <state width="1807" height="261" key="GridCell.Tab.0.center" timestamp="1584983800195">
+      <screen x="0" y="339" width="1920" height="1080" />
+    </state>
+    <state width="1807" height="261" key="GridCell.Tab.0.center/1920.0.1920.1080/0.339.1920.1080@0.339.1920.1080" timestamp="1584983800195" />
+    <state width="1807" height="261" key="GridCell.Tab.0.left" timestamp="1584983800195">
+      <screen x="0" y="339" width="1920" height="1080" />
+    </state>
+    <state width="1807" height="261" key="GridCell.Tab.0.left/1920.0.1920.1080/0.339.1920.1080@0.339.1920.1080" timestamp="1584983800195" />
+    <state width="1807" height="261" key="GridCell.Tab.0.right" timestamp="1584983800195">
+      <screen x="0" y="339" width="1920" height="1080" />
+    </state>
+    <state width="1807" height="261" key="GridCell.Tab.0.right/1920.0.1920.1080/0.339.1920.1080@0.339.1920.1080" timestamp="1584983800195" />
     <state x="482" y="175" width="1022" height="737" key="SettingsEditor" timestamp="1581529091250">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>

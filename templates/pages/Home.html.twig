@@ -1,14 +1,7 @@
 {% extends 'base.html.twig' %}
 {% block title %}Home{% endblock %}
 {% block body %}
-
-    <header>
-        <div class="maintitle">
-            <h2>Web-Dev Projects</h2>
-            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention
-                tofeatured content or information.</p>
-        </div>
-    </header>
+    <div id="app"></div>
     <div class="mainback">
         <div class="row">
             <div class="col-md-3">
@@ -18,16 +11,12 @@
                     <form class="form-inline">
                         <input class="form-control mr-2" type="search" placeholder="Search" aria-label="Search">
                         <button class="btn" type="submit">Search</button>
-
                     </form>
-                    {#                    {% if json is defined %}{{ json }}{% endif %}#}
                 </div>
-
                 <div class="mainproject">
-
                     {% for project in projects %}
                         <project-details project-name="{{ project.projectName }}">
-                            <a class="displayData" href="{{ path('home.search',{id:project.id}) }}"
+                            <a class="displayData" href="{{ path('project.search',{id:project.id}) }}"
                                slot="links">{{ project.projectName }}</a>
                             <div slot="description" class="suite"></div>
                             <div slot="attributes" class="secondsuite"></div>
@@ -36,7 +25,7 @@
                 </div>
                 <div class="container mt-5">
                     <project-card>
-                        <a class="allProject btn btn-primary" href="{{ path('project') }}" slot="button">open
+                        <a class="allProject btn btn-primary" href="/project" slot="button">open
                             database</a>
                     </project-card>
                 </div>
@@ -47,7 +36,6 @@
                         <cc-countdown duration="3" purpose="Timer 1"></cc-countdown>
                         <cc-countdown duration="180" purpose="Timer 2"></cc-countdown>
                     </div>
-
                     {% for category in categories %}
                         <div class="col-md-3 col-sm-6">
                             <div class="card">
@@ -63,13 +51,10 @@
                         </div>
                     {% endfor %}
                 </div>
-
                 <div class="pagination mt-3">
                     {{ knp_pagination_render(categories) }}
                 </div>
             </div>
         </div>
     </div>
-
-
 {% endblock %}

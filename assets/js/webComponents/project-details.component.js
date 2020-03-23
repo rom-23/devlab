@@ -1,5 +1,6 @@
 'use strict';
 import axios from 'axios';
+
 customElements.define('project-details', class ProjectDetailsElement extends HTMLElement {
     constructor() {
         super();
@@ -89,7 +90,7 @@ customElements.define('project-details', class ProjectDetailsElement extends HTM
         const spanSuite = this.querySelector('.suite');
         const secondSuite = this.querySelector('.secondsuite');
         this.querySelectorAll('.displayData').forEach(function (link) {
-                link.addEventListener('click', function (event) {
+            link.addEventListener('click', function (event) {
                 event.preventDefault();
                 const url = this.href;
                 axios.get(url).then(function (response) {
