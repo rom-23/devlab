@@ -1,6 +1,4 @@
 
-
-$primary: darken(#8e0cca, 20%);
 $colorhead: #e9ffa4;
 .sidebar{
   border: 1px solid grey;
@@ -32,10 +30,15 @@ header{
 }
 
 
+//@import '~vuetify/src/styles/main.sass';
+@import '~vuetify/dist/vuetify.min.css';
 @import "~bootstrap/scss/bootstrap";
 @import "jumbotron";
-@import "experience";
-@import "profil";
+//@import "experience";
+
+//@import "profil";
+@import "sidemenu";
+
 //@import '~bootstrap/scss/_navbar';
 //@import '~bootstrap/scss/_card';
 

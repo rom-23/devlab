@@ -1,60 +1,57 @@
 {% extends 'base.html.twig' %}
 {% block title %}Home{% endblock %}
 {% block body %}
-    <div id="app"></div>
-    <div class="mainback">
-        <div class="row">
-            <div class="col-md-3">
-                <div class="container sidebar">
-                    <h2>Modern Business Features</h2>
-                    <p>The Modern Business template by Start Bootstrap includes:</p>
-                    <form class="form-inline">
-                        <input class="form-control mr-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn" type="submit">Search</button>
-                    </form>
-                </div>
-                <div class="mainproject">
-                    {% for project in projects %}
-                        <project-details project-name="{{ project.projectName }}">
-                            <a class="displayData" href="{{ path('project.search',{id:project.id}) }}"
-                               slot="links">{{ project.projectName }}</a>
-                            <div slot="description" class="suite"></div>
-                            <div slot="attributes" class="secondsuite"></div>
-                        </project-details>
-                    {% endfor %}
-                </div>
-                <div class="container mt-5">
-                    <project-card>
-                        <a class="allProject btn btn-primary" href="/project" slot="button">open
-                            database</a>
-                    </project-card>
-                </div>
-            </div>
-            <div class="col-md-9">
-                <div class="row">
-                    <div class="container pb-4">
-                        <cc-countdown duration="3" purpose="Timer 1"></cc-countdown>
-                        <cc-countdown duration="180" purpose="Timer 2"></cc-countdown>
-                    </div>
-                    {% for category in categories %}
-                        <div class="col-md-3 col-sm-6">
-                            <div class="card">
-                                <div class="card-body  text-center">
-                                    <h4 class="card-title">{{ category.categoryName }}</h4>
-                                    <img class="img-thumbnail" src="{{ asset('images/empty.jpg') }}" alt="">
-                                    <p class="card-text text-center">{{ category.categoryDesc }}</p>
-                                </div>
-                                <div class="container mb-3 text-center">
-                                    <a href="#" class="btn">Read more</a>
-                                </div>
-                            </div>
-                        </div>
-                    {% endfor %}
-                </div>
-                <div class="pagination mt-3">
-                    {{ knp_pagination_render(categories) }}
-                </div>
-            </div>
+
+{#    <div class="row">#}
+
+        <div id="app">
+
         </div>
-    </div>
+
+{#        <div class="col-md-6">#}
+{#            <div class="mainback">#}
+{#                <div class="col-md-3">#}
+
+{#                    <div class="mainproject">#}
+{#                        {% for project in projects %}#}
+{#                            <project-details project-name="{{ project.projectName }}">#}
+{#                                <a class="displayData" href="{{ path('project.search',{id:project.id}) }}"#}
+{#                                   slot="links">{{ project.projectName }}</a>#}
+{#                                <div slot="description" class="suite"></div>#}
+{#                                <div slot="attributes" class="secondsuite"></div>#}
+{#                            </project-details>#}
+{#                        {% endfor %}#}
+{#                    </div>#}
+{#                    <div class="container mt-5">#}
+{#                        <project-card>#}
+{#                            <a class="allProject btn btn-primary" href="/apip/projects" slot="button">open#}
+{#                                database</a>#}
+{#                        </project-card>#}
+{#                    </div>#}
+{#                </div>#}
+{#                <div class="col-md-9">#}
+{#                    <div class="row">#}
+
+{#                        {% for category in categories %}#}
+{#                            <div class="col-md-3 col-sm-6">#}
+{#                                <div class="card">#}
+{#                                    <div class="card-body  text-center">#}
+{#                                        <h4 class="card-title">{{ category.categoryName }}</h4>#}
+{#                                        <img class="img-thumbnail" src="{{ asset('images/empty.jpg') }}" alt="">#}
+{#                                        <p class="card-text text-center">{{ category.categoryDesc }}</p>#}
+{#                                    </div>#}
+{#                                    <div class="container mb-3 text-center">#}
+{#                                        <a href="#" class="btn">Read more</a>#}
+{#                                    </div>#}
+{#                                </div>#}
+{#                            </div>#}
+{#                        {% endfor %}#}
+{#                    </div>#}
+{#                    <div class="pagination mt-3">#}
+{#                        {{ knp_pagination_render(categories) }}#}
+{#                    </div>#}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+{#    </div>#}
 {% endblock %}

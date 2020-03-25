@@ -1,124 +1,68 @@
 <template>
-    <div class="parallax2 p-5">
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-body  text-center">
-                        <h4 class="card-title">Structures & données</h4>
-                        <p class="card-text text-center">
-                            mi vitae nunc lobortis pharetra. Nulla volutpat tincidunt ornare.
-                            Pellentesque habitant morbi tristique senectus et netus et malesuada fames
-                            Nullam in aliquet odio. Aliquam
-                            mi vitae nunc lobortis pharetra. Nulla volutpat tincidunt ornare.
-                            Pellentesque habitant morbi tristique senectus et netus et turpis egestas.
-                            Nullam in aliquet odio. Aliquam Nullam in aliquet odio. Aliquam Nullam in aliquet
-                            odio. Aliquam
-                        </p>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-body  text-center">
-                        <h4 class="card-title">Frameworks</h4>
-                        <p class="card-text text-center">
-                            mi vitae nunc lobortis pharetra. Nulla volutpat tincidunt ornare.
-                            Pellentesque habitant morbi tristique senectus et netus et malesuada fames
-                            Nullam in aliquet odio. Aliquam
-                            mi vitae nunc lobortis pharetra. Nulla volutpat tincidunt ornare.
-                            Pellentesque habitant morbi tristique senectus et netus et turpis egestas.
-                            Nullam in aliquet odio. Aliquam Nullam in aliquet odio. Aliquam Nullam in aliquet
-                            odio. Aliquam
-                        </p>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-body  text-center">
-                        <h4 class="card-title">Bases de données</h4>
-                        <p class="card-text text-center">
-                            mi vitae nunc lobortis pharetra. Nulla volutpat tincidunt ornare.
-                            Pellentesque habitant morbi tristique senectus et netus et malesuada fames
-                            Nullam in aliquet odio. Aliquam
-                            mi vitae nunc lobortis pharetra. Nulla volutpat tincidunt ornare.
-                            Pellentesque habitant morbi tristique senectus et netus et turpis egestas.
-                            Nullam in aliquet odio. Aliquam Nullam in aliquet odio. Aliquam Nullam in aliquet
-                            odio. Aliquam
-                        </p>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row mt-5">
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-body  text-center">
-                        <h4 class="card-title">Structures & données</h4>
-                        <p class="card-text text-center">
-                            mi vitae nunc lobortis pharetra. Nulla volutpat tincidunt ornare.
-                            Pellentesque habitant morbi tristique senectus et netus et malesuada fames
-                            Nullam in aliquet odio. Aliquam
-                            mi vitae nunc lobortis pharetra. Nulla volutpat tincidunt ornare.
-                            Pellentesque habitant morbi tristique senectus et netus et turpis egestas.
-                            Nullam in aliquet odio. Aliquam Nullam in aliquet odio. Aliquam Nullam in aliquet
-                            odio. Aliquam
-                        </p>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-body  text-center">
-                        <h4 class="card-title">Frameworks</h4>
-                        <p class="card-text text-center">
-                            mi vitae nunc lobortis pharetra. Nulla volutpat tincidunt ornare.
-                            Pellentesque habitant morbi tristique senectus et netus et malesuada fames
-                            Nullam in aliquet odio. Aliquam
-                            mi vitae nunc lobortis pharetra. Nulla volutpat tincidunt ornare.
-                            Pellentesque habitant morbi tristique senectus et netus et turpis egestas.
-                            Nullam in aliquet odio. Aliquam Nullam in aliquet odio. Aliquam Nullam in aliquet
-                            odio. Aliquam
-                        </p>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-body  text-center">
-                        <h4 class="card-title">Bases de données</h4>
-                        <p class="card-text text-center">
-                            mi vitae nunc lobortis pharetra. Nulla volutpat tincidunt ornare.
-                            Pellentesque habitant morbi tristique senectus et netus et malesuada fames
-                            Nullam in aliquet odio. Aliquam
-                            mi vitae nunc lobortis pharetra. Nulla volutpat tincidunt ornare.
-                            Pellentesque habitant morbi tristique senectus et netus et turpis egestas.
-                            Nullam in aliquet odio. Aliquam Nullam in aliquet odio. Aliquam Nullam in aliquet
-                            odio. Aliquam
-                        </p>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <v-container fluid>
+        <v-app>
+            <Experience/>
+            <v-card>
+                <v-card-title>
+                    Projets
+                    <v-spacer></v-spacer>
+                    <v-text-field
+                            v-model="search"
+                            append-icon="mdi-magnify"
+                            label="Search"
+                            single-line
+                            hide-details
+                    />
+                </v-card-title>
+                <v-data-table
+                        :headers="headers"
+                        :items="projectList"
+                        :search="search"
+                />
+            </v-card>
+        </v-app>
+    </v-container>
 </template>
 <script>
-
+import request from '../class/ApiCall.js';
+import Experience from "./Experience";
     export default {
         name: 'Profil',
-
+        components: {Experience},
         data() {
-            return {};
+            return {
+                urlToCall: "/apip/projects",
+                projectList: [],
+                search: '',
+                headers: [
+                    {
+                        text: 'id',
+                        align: 'start',
+                        sortable: true,
+                        value: 'id',
+                    },
+                    {text: 'Nom du projet', value: 'projectName'},
+                    {text: 'Description', value: 'projectDesc'},
+                    {text: 'Crée le', value: 'createdAt'},
+                ],
+            };
         },
-        methods: {},
+        methods: {
+
+        },
         created() {
-            // crochets
+            fetch(request('projects'))
+                .then(response => {
+                    if (response.ok) {
+                        response.json().then(data =>
+                            this.projectList = data["hydra:member"])
+                    } else {
+                        throw Error(response.statusText);
+                    }
+                })
+                .catch(error => {
+                    alert(error.message);
+                });
         },
     };
 </script>

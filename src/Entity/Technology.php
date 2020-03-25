@@ -35,6 +35,7 @@ class Technology
 
     /**
      * @ORM\Column(type="datetime")
+     * @Groups("project:read")
      */
     private $createdAt;
 
@@ -46,6 +47,7 @@ class Technology
     /**
      * @ORM\ManyToOne(targetEntity="App\Entity\Category", inversedBy="technology")
      * @ORM\JoinColumn(nullable=false)
+     * @Groups("project:read")
      */
     private $category;
 

@@ -58,15 +58,7 @@ ${value.projectName}
             .catch(this.logError)
     }
 
-    // displayObject(obj, objName) {
-    //     let res = "";
-    //     for (let i in obj) {
-    //         if (obj.hasOwnProperty(i)) {
-    //             res += objName + "." + i + " = " + obj[i] + "\n";
-    //         }
-    //     }
-    //     return res;
-    // }
+
 
 };
 module.exports = Api;

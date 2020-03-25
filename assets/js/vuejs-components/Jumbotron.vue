@@ -1,6 +1,6 @@
 
 <template>
-<div class="parallax1" id="propos" data-spy>
+<div class="parallax1">
   <div class="headingParallax">
     Development Lab
   </div>

@@ -1,6 +1,5 @@
 //import axios from 'axios';
 //import Api from '../class/Api';
-import MYSAMPLEAPP from '../class/ApiClass';
 //const Api = require('../class/ApiClass');
 customElements.define('project-card', class ProjectCard extends HTMLElement {
     constructor() {
@@ -71,10 +70,13 @@ customElements.define('project-card', class ProjectCard extends HTMLElement {
             //AJAX with Fetch Api
             fetch(urlToCall, myInit)
                 .then(response => {
+
                     if (response.ok) {
+
                         response.json().then(data =>
-                            Object.entries(JSON.parse(data.results)).forEach(([key, value]) => {
-                                result.innerHTML += `<p><a href="project/${value.id}">${value.projectName}</a></p>`;
+                            // console.log(data["hydra:member"]))
+                            Object.entries(data["hydra:member"]).forEach(([key, value]) => {
+                                result.innerHTML += `<p><a href="/apip/projects/${value.id}">${value.projectName}</a></p>`;
                             }))
                     } else {
                         throw Error(response.statusText);
