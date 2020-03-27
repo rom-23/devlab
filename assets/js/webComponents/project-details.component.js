@@ -1,5 +1,5 @@
 'use strict';
-import axios from 'axios';
+import request from '../class/Api.js';
 
 customElements.define('project-details', class ProjectDetailsElement extends HTMLElement {
     constructor() {
@@ -10,14 +10,10 @@ customElements.define('project-details', class ProjectDetailsElement extends HTM
         this._template.innerHTML = `
         <details>
             <summary>
-          <span>
-            <code class="name">&lt<slot name="links">NEED NAME</slot>&gt;</code>
-            <i class="desc"><slot name="description">NEED DESCRIPTION</slot></i>
-          </span>
+               <slot name="links"></slot>
                 </summary>
                 <div class="attributes">
-                    <h4><span>Attributes</span></h4>
-                    <slot name="attributes"><p>None</p></slot>
+                    <slot name="attributes"><p></p></slot>
                 </div>
         </details>
         `;
@@ -30,36 +26,15 @@ customElements.define('project-details', class ProjectDetailsElement extends HTM
             details {
                 font-family: "Open Sans Light", Helvetica, Arial
             }
-
             .name {
                 font-weight: bold;
                 color: #217ac0;
                 font-size: 120%
             }
-
-            h4 {
-                margin: 10px 0 -8px 0;
-            }
-
-            h4 span {
-                background: #217ac0;
-                padding: 2px 6px 2px 6px
-            }
-
-            h4 span {
-                border: 1px solid #cee9f9;
-                border-radius: 4px
-            }
-
-            h4 span {
-                color: white
-            }
-
             .attributes {
                 margin-left: 22px;
                 font-size: 90%
             }
-
             .attributes p {
                 margin-left: 16px;
                 font-style: italic
@@ -83,7 +58,6 @@ customElements.define('project-details', class ProjectDetailsElement extends HTM
         this.setAttribute('project-name', JSON.stringify(value));
     };
 
-
     connectedCallback() {
         this._projectname = this.getAttribute('project-name');
         console.log(this._projectname);
@@ -92,21 +66,19 @@ customElements.define('project-details', class ProjectDetailsElement extends HTM
         this.querySelectorAll('.displayData').forEach(function (link) {
             link.addEventListener('click', function (event) {
                 event.preventDefault();
-                const url = this.href;
-                axios.get(url).then(function (response) {
-                    const displayJson = JSON.parse(response.data[0]);
-
-                    console.log(displayJson);
-                    //this.querySelector('.displayBase').appendChild((displayJson.projectName.cloneNode(true)))
-                    //spanSuite.textContent=displayJson.projectName+' '+displayJson.projectDesc;
-                    spanSuite.innerHTML = displayJson.projectDesc;
-                    var p = new Date(displayJson.createdAt.timestamp * 1e3).toISOString().slice(-13, -5);
-                    //var p = Date.parse(displayJson.createdAt);
-
-                    secondSuite.innerHTML = p;
-
-                });
-
+                fetch(request(this.name))
+                    .then(response => {
+                        if (response.ok) {
+                            response.json().then(data => {
+                                secondSuite.innerHTML = `<p>${data.projectDesc}</p>`;
+                            })
+                        } else {
+                            throw Error(response.statusText);
+                        }
+                    })
+                    .catch(error => {
+                        alert(error.message);
+                    });
             })
         });
         //this.render();

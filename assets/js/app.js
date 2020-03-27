@@ -6,9 +6,13 @@ import light from './theme';
 
 Vue.config.productionTip = false;
 Vue.use(Vuetify);
+
 const vuetify = new Vuetify({
     theme: {
         themes: { light },
+    },
+    icons: {
+        iconfont: 'mdi'
     },
 });
 new Vue({

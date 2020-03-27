@@ -1,74 +1,56 @@
 <template>
-    <div>
-        <Jumbotron/>
-        <v-app light>
-            <v-navigation-drawer color="primary"
-                    v-model="drawer"
-                    app
-                    clipped
-                    width="300"
-            >
-                <v-list dense >
-                    <v-list-item @click="">
-                        <v-list-item-action>
-                            <v-icon>dashboard</v-icon>
-                        </v-list-item-action>
-                        <v-list-item-content>
-                            <v-list-item-title class="secondary--text">Dashboard</v-list-item-title>
-                        </v-list-item-content>
-                    </v-list-item>
-                    <v-list-item @click="">
-                        <v-list-item-action>
-                            <v-icon>settings</v-icon>
-                        </v-list-item-action>
-                        <v-list-item-content>
-                            <v-list-item-title>Settings</v-list-item-title>
-                        </v-list-item-content>
-                    </v-list-item>
-                </v-list>
-            </v-navigation-drawer>
-            <v-app-bar
-                    color="#0e9358"
-                    app
-                    clipped-left
-            >
-                <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
-                <v-toolbar-title>Application</v-toolbar-title>
-            </v-app-bar>
-            <v-content>
-                <v-container
-                        fluid
-                        fill-height
-                >
-                    <v-layout
-                            row
-                            wrap
-                    >
-                        <v-flex shrink>
-
-                            <router-view name="main"></router-view>
-                        </v-flex>
-                    </v-layout>
-                </v-container>
-            </v-content>
-            <v-footer app height="100">
-                <span>Copyright © GrowUp App 3.0</span>
-            </v-footer>
-        </v-app>
-    </div>
+    <v-app light>
+        <v-navigation-drawer color="secondary" v-model="drawer" app clipped>
+            <v-list dense>
+                <v-list-item @click="">
+                    <v-list-item-action>
+                        <v-icon>mdi-desktop-mac-dashboard</v-icon>
+                    </v-list-item-action>
+                    <v-list-item-content>
+                        <v-list-item-title>Dashboard</v-list-item-title>
+                    </v-list-item-content>
+                </v-list-item>
+                <v-list-item @click="">
+                    <v-list-item-action>
+                        <v-icon>mdi-folder</v-icon>
+                    </v-list-item-action>
+                    <v-list-item-content>
+                        <v-list-item-title>Settings</v-list-item-title>
+                    </v-list-item-content>
+                </v-list-item>
+            </v-list>
+        </v-navigation-drawer>
+        <v-app-bar app clipped-left>
+            <v-app-bar-nav-icon @click.stop="drawer = !drawer"/>
+            <v-toolbar-items class="nav myTitle">Développeur Web</v-toolbar-items>
+            <div class="flex-grow-1"></div>
+            <v-toolbar-items class="nav">
+                <ul class=" nav navLink">
+                    <a href="#propos" @click.prevent="scrollTo('#propos')">
+                        à propos</a>
+                    <a href="#experiences" @click.prevent="scrollTo('#experiences')">
+                        Compétences</a>
+                    <a href="#portfolio" @click.prevent="scrollTo('#portfolio')">
+                        Portfolio</a>
+                    <a href="#contactMe" @click.prevent="scrollTo('#contactMe')">
+                        Contact</a>
+                    <a href="/admin">Back-end</a>
+                </ul>
+            </v-toolbar-items>
+        </v-app-bar>
+        <v-content>
+                <router-view name="main"></router-view>
+        </v-content>
+    </v-app>
 </template>
 <script>
-    import Jumbotron from './vuejs-components/Jumbotron.vue';
-
-    import Profil from './vuejs-components/Profil.vue';
-    import Navbar from './vuejs-components/Navbar.vue';
 
     export default {
         name: "App",
-        components: {Navbar, Jumbotron},
+        components: {},
         props: {},
         data: () => ({
-            drawer: null,
+            drawer: false,
         }),
 
         methods: {},

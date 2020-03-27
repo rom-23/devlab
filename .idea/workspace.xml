@@ -2,27 +2,55 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df923285-fd74-4722-a48b-203362445aa5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/css/sidemenu.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/class/ApiCall.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/router.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/theme.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/vuejs-components/Navbar.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/Bootstrap/admin-home.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/Vuetify/contact.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/Vuetify/development.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/Vuetify/experience.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/Vuetify/footer.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/Vuetify/profil.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/Vuetify/project.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/Vuetify/vuenavbar.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/18157.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/growup-screen01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/growup-screen02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/growup-screen03.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/logo3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/webshop-screen01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/webshop-screen02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/webshop-screen03.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/class/ApiAxios.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/vuejs-components/Contact.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/vuejs-components/Development.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/vuejs-components/Footer.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/vuejs-components/Home.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/vuejs-components/Profil.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/vuejs-components/Project.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/user/Home.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/experience.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/jumbotron.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/Vuetify/jumbotron.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/profil.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/sidemenu.scss" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/js/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/App.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/class/Api.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/class/Api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/class/ApiClass.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/class/ApiCall.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/class/Api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/router.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/theme.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/theme.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/js/vuejs-components/Experience.vue" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/vuejs-components/Experience.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/js/vuejs-components/Jumbotron.vue" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/vuejs-components/Jumbotron.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/vuejs-components/Profil.vue" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/vuejs-components/Profil.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/vuejs-components/Navbar.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/vuejs-components/Profil.vue" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/vuejs-components/ProjectList.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/js/webComponents/project-card.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/webComponents/project-card.component.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/webComponents/project-details.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/webComponents/project-details.component.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/knp_paginator.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/knp_paginator.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Technology.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Technology.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/pages/Home.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pages/Home.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/TechnologyController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/TechnologyController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/pages/AJAXHome.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/AJAXHome.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/pages/Home.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/technology/index.html.twig" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,25 +197,25 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../devblog" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assets/css/Vuetify" />
+      <recent name="$PROJECT_DIR$/assets/css" />
+      <recent name="$PROJECT_DIR$/src/Controller/admin" />
+      <recent name="$PROJECT_DIR$/src/Controller" />
+      <recent name="$PROJECT_DIR$/assets/js" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/assets/js/vuejs-components" />
+      <recent name="$PROJECT_DIR$/assets/images" />
       <recent name="$PROJECT_DIR$/assets/css" />
       <recent name="$PROJECT_DIR$/assets" />
       <recent name="$PROJECT_DIR$/src/Controller" />
-      <recent name="$PROJECT_DIR$/src/Entity" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/assets/js" />
-      <recent name="$PROJECT_DIR$/assets/js/class" />
-      <recent name="$PROJECT_DIR$/assets/js/vuejs-components" />
-      <recent name="$PROJECT_DIR$/assets" />
-      <recent name="$PROJECT_DIR$/assets/css/images" />
     </key>
   </component>
   <component name="ServiceViewManager">
@@ -244,7 +272,13 @@
       <workItem from="1585094432044" duration="3616000" />
       <workItem from="1585148287100" duration="18739000" />
       <workItem from="1585169508685" duration="2417000" />
-      <workItem from="1585173363042" duration="4077000" />
+      <workItem from="1585173363042" duration="5761000" />
+      <workItem from="1585221795572" duration="639000" />
+      <workItem from="1585246471691" duration="18379000" />
+      <workItem from="1585267056155" duration="1159000" />
+      <workItem from="1585296515416" duration="6676000" />
+      <workItem from="1585317998154" duration="10257000" />
+      <workItem from="1585329025414" duration="1388000" />
     </task>
     <servers />
   </component>
@@ -268,27 +302,27 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="515" y="17" width="937" height="1060" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/1920.0.1920.1080/67.27.1853.1053@67.27.1853.1053" timestamp="1581709845068" />
-    <state x="726" y="289" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1585162921542">
+    <state x="726" y="289" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1585261792058">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="726" y="289" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/1920.0.1920.1080/67.27.1853.1053@67.27.1853.1053" timestamp="1585162921542" />
-    <state x="683" y="617" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1584986229791">
-      <screen x="0" y="339" width="1920" height="1080" />
+    <state x="726" y="289" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/1920.0.1920.1080/67.27.1853.1053@67.27.1853.1053" timestamp="1585261792058" />
+    <state x="726" y="298" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1585258292664">
+      <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="683" y="617" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/1920.0.1920.1080/0.339.1920.1080@0.339.1920.1080" timestamp="1584986229791" />
-    <state x="726" y="298" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/1920.0.1920.1080/67.27.1853.1053@67.27.1853.1053" timestamp="1581962625644" />
+    <state x="726" y="298" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/1920.0.1920.1080/67.27.1853.1053@67.27.1853.1053" timestamp="1585258292664" />
     <state x="726" y="364" width="525" height="359" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1585177460239">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="726" y="364" width="525" height="359" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/1920.0.1920.1080/67.27.1853.1053@67.27.1853.1053" timestamp="1585177460239" />
-    <state x="776" y="287" width="424" height="491" key="FileChooserDialogImpl" timestamp="1585175073474">
+    <state x="776" y="287" width="424" height="500" key="FileChooserDialogImpl" timestamp="1585318004933">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="735" y="606" width="424" height="491" key="FileChooserDialogImpl/1920.0.1920.1080/0.339.1920.1080@0.339.1920.1080" timestamp="1585092126278" />
     <state x="2655" y="258" key="FileChooserDialogImpl/1920.0.1920.1080/0.339.1920.1080@1920.0.1920.1080" timestamp="1585082856449" />
     <state x="2655" y="267" width="424" height="491" key="FileChooserDialogImpl/1920.0.1920.1080/67.27.1853.1053@1920.0.1920.1080" timestamp="1584711270846" />
-    <state x="776" y="287" width="424" height="520" key="FileChooserDialogImpl/1920.0.1920.1080/67.27.1853.1053@67.27.1853.1053" timestamp="1585175073474" />
-    <state x="776" y="278" key="FileChooserDialogImpl/67.27.1853.1052@67.27.1853.1052" timestamp="1585059327363" />
+    <state x="776" y="287" width="424" height="520" key="FileChooserDialogImpl/1920.0.1920.1080/67.27.1853.1053@67.27.1853.1053" timestamp="1585318004933" />
+    <state x="776" y="251" width="424" height="500" key="FileChooserDialogImpl/67.27.1853.1052@67.27.1853.1052" timestamp="1585305899537" />
     <state width="1807" height="261" key="GridCell.Tab.0.bottom" timestamp="1585001840495">
       <screen x="0" y="339" width="1920" height="1080" />
     </state>

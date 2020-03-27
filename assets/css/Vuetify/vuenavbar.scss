@@ -1,0 +1,45 @@
+.nav {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-content: center;
+  a {
+    letter-spacing: 1.2px;
+    font-weight: bold;
+    font-family: verdana, sans-serif;
+    padding: 1em;
+    color: rgb(123, 123, 128);
+    text-decoration: none;
+    font-size: 15px;
+    vertical-align: center;
+  }
+}
+
+.navLink {
+  padding-right: 3em;
+  vertical-align: center;
+}
+
+.myTitle {
+  font-size: 18px;
+  padding-left: 0;
+}
+
+@media (max-width: 768px) {
+  #back-to-top-btn {
+    background-color: transparent;
+    outline: none;
+    width: 10px;
+  }
+  .nav a {
+    font-size: 12px;
+    padding: 2px;
+    letter-spacing: 0.3px;
+  }
+  .navLink {
+    padding: 0;
+  }
+  .myTitle {
+    font-size: 11px;
+    padding-left: 0;
+  }
+}

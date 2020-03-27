@@ -4,6 +4,7 @@
   <div class="headingParallax">
     Development Lab
   </div>
+
 </div>
 </template>
 

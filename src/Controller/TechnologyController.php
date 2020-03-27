@@ -12,8 +12,6 @@ class TechnologyController extends AbstractController
      */
     public function index()
     {
-        return $this->render('technology/index.html.twig', [
-            'controller_name' => 'TechnologyController',
-        ]);
+
     }
 }

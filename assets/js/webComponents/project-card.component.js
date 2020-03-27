@@ -1,6 +1,6 @@
-//import axios from 'axios';
-//import Api from '../class/Api';
-//const Api = require('../class/ApiClass');
+'use strict';
+import request from '../class/Api.js';
+
 customElements.define('project-card', class ProjectCard extends HTMLElement {
     constructor() {
         super();
@@ -37,46 +37,17 @@ customElements.define('project-card', class ProjectCard extends HTMLElement {
     }
 
     connectedCallback() {
-        let myHeaders = new Headers({
-            "Content-Type": "application/json",
-            // "Access-Control-Allow-Credentials": true,
-            "Access-Control-Allow-Origin": "*"
-        });
-        let myInit = {
-            method: 'GET',
-            headers: myHeaders,
-            mode: 'cors',
-            cache: 'default'
-        };
         const result = this.shadowRoot.querySelector('.resultat');
-        this.querySelector('.allProject').addEventListener('click', function (event) {
+        this.querySelector('.allProject').addEventListener('click', async function (event) {
             event.preventDefault();
             event.stopPropagation();
-            const urlToCall = this.href;
-
-
-            //AJAX with module class
-            //   let api = new Api(urlToCall);
-            //   console.log(api._template);
-            //   const calque = document.createElement('div');
-            //
-            // result.innerHTML=`${api._template}`;
-            // calque.appendChild(result);
-// const newProduct = new MYSAMPLEAPP.product(urlToCall,[]);
-// console.log(newProduct.getApiResponse());
-// result.innerHTML+=`<pre>${newProduct.getApiResponse()}</pre>`;
-//alert(newProduct.doTaxCalculations);
-
-            //AJAX with Fetch Api
-            fetch(urlToCall, myInit)
+            await fetch(request(this.name))
                 .then(response => {
-
                     if (response.ok) {
-
                         response.json().then(data =>
-                            // console.log(data["hydra:member"]))
                             Object.entries(data["hydra:member"]).forEach(([key, value]) => {
-                                result.innerHTML += `<p><a href="/apip/projects/${value.id}">${value.projectName}</a></p>`;
+                                result.innerHTML += `
+                                    <p><a href="apip/projects/${value.id}">${value.projectName}</a></p>`;
                             }))
                     } else {
                         throw Error(response.statusText);
@@ -85,7 +56,6 @@ customElements.define('project-card', class ProjectCard extends HTMLElement {
                 .catch(error => {
                     alert(error.message);
                 });
-
 
             // AJAX with Vanilla JS -------------------------------------
             //const request = new XMLHttpRequest();
@@ -119,17 +89,6 @@ customElements.define('project-card', class ProjectCard extends HTMLElement {
             //     // console.log(request.getAllResponseHeaders());
             //     // console.log(request.getResponseHeader("Last-Modified"));
             // }
-
-            // AJAX with axios require -------------------------------------
-            // axios.get(urlToCall).then(function (response) {
-            // const data = JSON.parse(response.data[0]);
-            //      data.forEach(obj => {
-            //         Object.entries(obj).forEach(([key, value]) => {
-            //             console.log(`${key} ${value}`);
-            //             result.innerHTML+=`<p>${key} ${value}</p>`;
-            //         })});
-            //
-            // });
         });
     };
 

@@ -5,5 +5,6 @@ export default {
     base: colors.indigo.base,
     darken1: colors.purple.darken2,
   },
-  secondary: colors.yellow,
+  secondary: colors.grey.lighten3,
+  tertiary: colors.blue.darken1,
 }

@@ -1,0 +1,20 @@
+
+.mainback{
+  background: grey;
+  padding:5em;
+  .btn{
+    background: rgba(189, 15, 26, 0.82);
+    &:hover{
+      background: #AAAAAA;
+    }
+  }
+  @extend .container-fluid;
+}
+.mainproject{
+
+  @extend .container;
+}
+.maintitle{
+  text-align: center;
+  @extend .container;
+}

@@ -1,46 +1,13 @@
 
-$colorhead: #e9ffa4;
-.sidebar{
-  border: 1px solid grey;
-  border-radius: 5px;
-  margin-bottom: 2em;
-  padding: 1em;
-}
-.mainback{
-  background: rgba(201, 208, 215, 0.57);
-  padding:5em;
-  .btn{
-    background: rgba(189, 15, 26, 0.82);
-    &:hover{
-      background: #AAAAAA;
-    }
-  }
-  @extend .container-fluid;
-}
-.mainproject{
-
-  @extend .container;
-}
-.maintitle{
-  text-align: center;
-  @extend .container;
-}
-header{
-  padding: 1em;
-}
-
-
-//@import '~vuetify/src/styles/main.sass';
+@import "Bootstrap/admin-home";
 @import '~vuetify/dist/vuetify.min.css';
 @import "~bootstrap/scss/bootstrap";
-@import "jumbotron";
-//@import "experience";
-
-//@import "profil";
-@import "sidemenu";
-
-//@import '~bootstrap/scss/_navbar';
-//@import '~bootstrap/scss/_card';
-
-
-
+@import "Vuetify/vuenavbar";
+@import "Vuetify/jumbotron";
+@import "Vuetify/development";
+@import "Vuetify/project";
+@import "Vuetify/experience";
+@import "Vuetify/footer";
+@import "Vuetify/profil";
+@import "Vuetify/contact";
+@import '~@mdi/font/css/materialdesignicons.css';
