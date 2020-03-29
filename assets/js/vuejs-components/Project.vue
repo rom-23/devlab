@@ -3,7 +3,7 @@
     <v-row>
       <v-col>
         <v-hover>
-          <template v-slot="{ hover }">
+          <template v-slot="{ hover }" id="projets">
         <v-card class="mx-auto transparent" width="500" :elevation="hover ? 20 : 4">
           <v-toolbar dense flat color="tertiary" class="cardFooter" elevation="1">
             <v-app-bar-nav-icon/>

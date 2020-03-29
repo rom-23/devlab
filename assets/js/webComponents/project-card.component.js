@@ -44,7 +44,7 @@ customElements.define('project-card', class ProjectCard extends HTMLElement {
             await fetch(request(this.name))
                 .then(response => {
                     if (response.ok) {
-                        response.json().then(data =>
+                         response.json().then(data =>
                             Object.entries(data["hydra:member"]).forEach(([key, value]) => {
                                 result.innerHTML += `
                                     <p><a href="apip/projects/${value.id}">${value.projectName}</a></p>`;

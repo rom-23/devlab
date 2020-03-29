@@ -1,13 +1,12 @@
 <template>
-    <div>
+    <div id="top">
         <Jumbotron/>
         <Profil/>
-        <v-container>
+
             <Experience/>
-        </v-container>
-        <v-container fluid class="secondary">
+
             <Development/>
-        </v-container>
+
         <Project/>
         <Contact/>
         <Footer/>
@@ -33,5 +32,5 @@
         methods: {}
     };
 </script>
-<style scoped>
+<style>
 </style>

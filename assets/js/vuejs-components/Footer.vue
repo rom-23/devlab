@@ -1,5 +1,5 @@
 <template>
-  <v-footer padless>
+  <v-footer padless class="parallax6">
     <v-row justify="center" no-gutters>
       <v-col class="foot py-4 text-center white--text" cols="12">
         <strong>RomDev - Lab v1</strong> — {{ new Date().getFullYear() }}

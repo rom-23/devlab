@@ -12,15 +12,25 @@
     font-size: 15px;
     vertical-align: center;
   }
+  a:active{
+    background-color: rgba(222, 218, 233, 0.93);
+  }
+  a:hover{
+    color: rgba(199, 126, 73, 0.78);
+  }
 }
 
+.datatable{
+  tr:hover{
+    cursor: pointer;
+  }
+}
 .navLink {
   padding-right: 3em;
   vertical-align: center;
 }
-
 .myTitle {
-  font-size: 18px;
+  font-size: 15px;
   padding-left: 0;
 }
 

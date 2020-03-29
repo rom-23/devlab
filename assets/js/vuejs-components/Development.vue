@@ -10,7 +10,7 @@
           </v-carousel>
         </v-col>
         <v-col cols="12" sm="6" md="4">
-          <v-container>
+          <v-container id="projets" data-spy>
             <v-hover>
               <template v-slot="{ hover }">
                 <v-card class="mx-auto pb-3" max-width="330" :elevation="hover ? 16 : 3">

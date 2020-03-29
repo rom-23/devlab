@@ -1,10 +1,9 @@
 
 <template>
-<div class="parallax1">
+<div class="parallax1" id="propos" data-spy>
   <div class="headingParallax">
     Development Lab
   </div>
-
 </div>
 </template>
 

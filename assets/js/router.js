@@ -11,6 +11,15 @@ export default new Router({
             name: 'home',
             components: {
                 main: () => import('./vuejs-components/Home.vue'),
+                left: () => import('./vuejs-components/technologies/SearchTechno.vue'),
+            },
+        },
+        {
+            path: '/technologies/:id',
+            name: 'technologies',
+            components: {
+                main: () => import('./vuejs-components/Home.vue'),
+                left: () => import('./vuejs-components/technologies/SearchTechno.vue'),
             },
         },
     ],

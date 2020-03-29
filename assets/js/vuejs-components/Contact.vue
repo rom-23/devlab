@@ -1,10 +1,10 @@
 <template>
-  <div class="parallax4">
-    <v-container fluid  id="contactMe">
+  <div class="parallax7">
+    <v-container fluid  id="contactMe" data-spy>
       <v-row class="align-center justify-center">
         <div class="title blue--text text--lighten-2"><strong>Contactez moi</strong></div>
       </v-row>
-      <v-divider class="my-3"/>
+<!--      <v-divider class="my-3"/>-->
       <v-row class="justify-center">
         <v-col cols="12" sm="6" md="3">
           <v-card flat class="transparent grey--text">

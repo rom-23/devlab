@@ -3,8 +3,8 @@
     <v-row>
       <v-col>
         <v-hover>
-          <template v-slot="{ hover }">
-            <v-card class="mx-auto" width="400" :elevation="hover ? 24 : 3">
+          <template v-slot="{ hover }" >
+            <v-card id="techno" data-spy class="mx-auto" width="400" :elevation="hover ? 24 : 3">
               <v-card-text class="text-center">
                 <v-icon x-large class="blue--text text--lighten-2">mdi-flash</v-icon>
               </v-card-text>

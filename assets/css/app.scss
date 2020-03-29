@@ -1,7 +1,7 @@
 
-@import "Bootstrap/admin-home";
+
 @import '~vuetify/dist/vuetify.min.css';
-@import "~bootstrap/scss/bootstrap";
+@import '~@mdi/font/css/materialdesignicons.css';
 @import "Vuetify/vuenavbar";
 @import "Vuetify/jumbotron";
 @import "Vuetify/development";
@@ -10,4 +10,5 @@
 @import "Vuetify/footer";
 @import "Vuetify/profil";
 @import "Vuetify/contact";
-@import '~@mdi/font/css/materialdesignicons.css';
+@import "~bootstrap/scss/bootstrap";
+@import "admin-home";

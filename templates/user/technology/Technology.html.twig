@@ -1,0 +1,54 @@
+{% extends 'base.html.twig' %}
+{% block title %}{% endblock %}
+{% block body %}
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <h1 class="navbar-brand">Admin </h1>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="admin">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Edition</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Update</a>
+                </li>
+            </ul>
+            <span class="navbar-text"><a href="/" class="btn btn-success"> Go to Front-end</a></span>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="mainback">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6">
+                        <h4 class="card-title">{{ techno.technoName }}</h4>
+                        <img class="img-thumbnail" src="{{ asset('images/empty.jpg') }}" alt="">
+                        <p class="card-text">Description : </p>
+                        <p>{{ techno.technoDesc }}</p>
+                    </div>
+                    <div class="col-md-8 col-sm-6">
+                        <p>Projets utilisant cette technologie :</p>
+                        <div class="row">
+                            {% for project in projects %}
+                                <div class="col-md-4 col-sm-6">
+                                    <div class="card">
+                                        <div class="card-body text-center">
+                                            <h4 class="card-title">{{ project.projectName }}</h4>
+                                            <p class="card-text text-center">{{ project.projectDesc }}</p>
+                                        </div>
+                                        <div class="container mb-3 text-center">
+                                            <a href="#" class="btn">Read more</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+{% endblock %}
