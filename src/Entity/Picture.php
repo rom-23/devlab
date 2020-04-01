@@ -10,7 +10,10 @@ use Symfony\Component\Serializer\Annotation\Groups;
 
 /**
  * @ORM\Entity(repositoryClass="App\Repository\PictureRepository")
- * @ApiResource
+ * @ApiResource(
+ *     normalizationContext={"groups"={"pictures:read"}},
+ *     denormalizationContext={"groups"={"pictures:write"}}
+ *     )
  */
 class Picture
 {
@@ -18,13 +21,13 @@ class Picture
      * @ORM\Id()
      * @ORM\GeneratedValue()
      * @ORM\Column(type="integer")
-     * @Groups("project:read")
+     * @Groups({"pictures:read","project:read"})
      */
     private $id;
 
     /**
      * @ORM\Column(type="string", length=255)
-     * @Groups("project:read")
+     * @Groups({"pictures:read", "project:read"})
      */
     private $pictureFile;
 
@@ -40,6 +43,7 @@ class Picture
 
     /**
      * @ORM\ManyToMany(targetEntity="App\Entity\Project", inversedBy="pictures")
+     * @Groups({"pictures:read"})
      */
     private $project;
 

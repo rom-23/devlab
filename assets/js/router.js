@@ -10,16 +10,14 @@ export default new Router({
             path: '/',
             name: 'home',
             components: {
-                main: () => import('./vuejs-components/Home.vue'),
-                left: () => import('./vuejs-components/technologies/SearchTechno.vue'),
+                main: () => import('./vuejs-components/Home.vue')
             },
         },
         {
-            path: '/technologies/:id',
+            path: '/global-search/:id',
             name: 'technologies',
             components: {
-                main: () => import('./vuejs-components/Home.vue'),
-                left: () => import('./vuejs-components/technologies/SearchTechno.vue'),
+                main: () => import('./vuejs-components/Home.vue')
             },
         },
     ],

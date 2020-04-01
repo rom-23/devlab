@@ -1,12 +1,8 @@
 <template>
     <div id="top">
         <Jumbotron/>
-        <Profil/>
-
-            <Experience/>
-
-            <Development/>
-
+        <Experience/>
+        <Development/>
         <Project/>
         <Contact/>
         <Footer/>
@@ -15,7 +11,6 @@
 <script>
     import Jumbotron from './Jumbotron.vue';
     import Experience from './Experience.vue';
-    import Profil from './Profil.vue';
     import Development from './Development';
     import Project from './Project';
     import Contact from './Contact';
@@ -23,13 +18,16 @@
 
     export default {
         name: "Home",
-        components: {Jumbotron, Experience, Profil, Development, Project, Contact, Footer},
+        components: {Jumbotron, Experience, Development, Project, Contact, Footer},
         data() {
             return {};
         },
         mounted() {
         },
-        methods: {}
+        methods: {},
+        created() {
+
+        }
     };
 </script>
 <style>

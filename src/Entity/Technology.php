@@ -9,7 +9,10 @@ use Symfony\Component\Serializer\Annotation\Groups;
 use ApiPlatform\Core\Annotation\ApiResource;
 /**
  * @ORM\Entity(repositoryClass="App\Repository\TechnologyRepository")
- * @ApiResource
+ * @ApiResource(
+ *     normalizationContext={"groups"={"global-search:read"}},
+ *     denormalizationContext={"groups"={"global-search:write"}}
+ *     )
  */
 class Technology
 {
@@ -17,37 +20,38 @@ class Technology
      * @ORM\Id()
      * @ORM\GeneratedValue()
      * @ORM\Column(type="integer")
-     * @Groups("project:read")
+     * @Groups({"global-search:read", "project:read", "categories:read"})
      */
     private $id;
 
     /**
      * @ORM\Column(type="string", length=255)
-     * @Groups("project:read")
+     * @Groups({"global-search:read", "project:read", "categories:read"})
      */
     private $technoName;
 
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
-     * @Groups("project:read")
+     * @Groups({"global-search:read", "project:read"})
      */
     private $technoDesc;
 
     /**
      * @ORM\Column(type="datetime")
-     * @Groups("project:read")
+     * @Groups({"global-search:read", "project:read"})
      */
     private $createdAt;
 
     /**
      * @ORM\ManyToMany(targetEntity="App\Entity\Project", inversedBy="technologies")
+     * @Groups({"global-search:read"})
      */
     private $project;
 
     /**
      * @ORM\ManyToOne(targetEntity="App\Entity\Category", inversedBy="technology")
      * @ORM\JoinColumn(nullable=false)
-     * @Groups("project:read")
+     * @Groups({"global-search:read"})
      */
     private $category;
 

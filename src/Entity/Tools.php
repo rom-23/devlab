@@ -10,7 +10,10 @@ use Symfony\Component\Serializer\Annotation\Groups;
 
 /**
  * @ORM\Entity(repositoryClass="App\Repository\ToolsRepository")
- * @ApiResource
+ * @ApiResource(
+ *     normalizationContext={"groups"={"tools:read"}},
+ *     denormalizationContext={"groups"={"tools:write"}}
+ *     )
  */
 class Tools
 {
@@ -18,18 +21,19 @@ class Tools
      * @ORM\Id()
      * @ORM\GeneratedValue()
      * @ORM\Column(type="integer")
-     * @Groups("project:read")
+     * @Groups({"tools:read", "project:read"})
      */
     private $id;
 
     /**
      * @ORM\Column(type="string", length=255)
-     * @Groups("project:read")
+     * @Groups({"tools:read", "project:read"})
      */
     private $toolName;
 
     /**
      * @ORM\ManyToMany(targetEntity="App\Entity\Project", inversedBy="tools")
+     * @Groups({"tools:read"})
      */
     private $project;
 

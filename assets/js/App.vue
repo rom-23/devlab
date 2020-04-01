@@ -2,7 +2,7 @@
     <v-app light>
         <v-navigation-drawer color="secondary" v-model="drawer" app clipped width="40em">
             <v-container>
-            <router-view name="left"/>
+                <GlobalSearch/>
             </v-container>
         </v-navigation-drawer>
         <v-app-bar app clipped-left>
@@ -33,10 +33,10 @@
     </v-app>
 </template>
 <script>
-
+import GlobalSearch from './vuejs-components/global-search/GlobalSearch.vue';
     export default {
         name: "App",
-        components: {},
+        components: {GlobalSearch},
         props: {},
         data: () => ({
             drawer: false,
