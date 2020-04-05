@@ -57,7 +57,8 @@ class ProjectType extends AbstractType
         'required' => true,
         'choice_label' => 'pictureFile',
         'multiple' => true
-      ]);
+      ])
+      ->add('createdAt');
   }
 
   public function configureOptions(OptionsResolver $resolver)

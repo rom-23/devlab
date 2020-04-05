@@ -2,47 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df923285-fd74-4722-a48b-203362445aa5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/css/multi-select/multi-select.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/admin/adminHome.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/admin/adminProject.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/admin/training.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/webComponents/modal/pp-modal.component.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/admin/TrainingController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Form/ProjectType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/Include/NavBar.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/admin/Projects/AdminProjects.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/admin/Projects/Edit.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/admin/Projects/New.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/admin/Projects/_form.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/admin/SandBox.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/admin-home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/admin-home.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/class/ApiAxios.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/class/ApiAxios.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/vuejs-components/global-search/GlobalSearch.vue" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/vuejs-components/global-search/GlobalSearch.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/vuejs-components/global-search/SearchProject.vue" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/vuejs-components/global-search/SearchProject.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/vuejs-components/global-search/SearchTechno.vue" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/vuejs-components/global-search/SearchTechno.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/vuejs-components/global-search/SearchTool.vue" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/vuejs-components/global-search/SearchTool.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/webComponents/cc-countdown.component.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/webComponents/user-card.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/webComponents/user-card.component.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/framework.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/framework.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/twig.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/twig.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/ProjectController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ProjectController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/TechnologyController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/TechnologyController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/admin/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/admin/AdminController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Picture.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Picture.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Project.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Project.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Technology.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Technology.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Tools.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Tools.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/AdminHome.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/AdminHome.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/user/Home.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/Home.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/user/project/Project.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/project/Project.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/user/technology/Technology.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/technology/Technology.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -315,7 +275,7 @@
       <workItem from="1586003945980" duration="773000" />
       <workItem from="1586005729196" duration="14178000" />
       <workItem from="1586077531949" duration="13342000" />
-      <workItem from="1586092520626" duration="11877000" />
+      <workItem from="1586092520626" duration="12651000" />
     </task>
     <servers />
   </component>
