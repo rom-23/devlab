@@ -6,7 +6,7 @@
                     <v-card dense class="pl-5 pr-5" flat>
                         <v-toolbar dense elevation="2">
                             <v-toolbar-title class="subtitle-2">
-                                <v-icon class="blue--text text--lighten-2">mdi-flash</v-icon>
+                                <v-icon small class="blue--text text--lighten-2">mdi-wrench</v-icon>
                                 Rechercher un outils
                             </v-toolbar-title>
                         </v-toolbar>
@@ -26,17 +26,29 @@
                                         return-object/>
                             </v-col>
                             <v-container class="mt-0 pt-0" v-if="selectedTools">
+                                <v-card dense flat>
+                                    <v-card-title class="primary--text p-0">
+                                        <span class="subtitle-2"> -> {{selectedTools.toolName}} (id {{selectedTools.id}})</span>
+                                    </v-card-title>
                                 <v-list-item>
                                     <v-list-item-content>
-                                        <v-list-item-subtitle>Id : {{selectedTools.id}}</v-list-item-subtitle>
-                                        <v-list-item-subtitle>Nom : {{selectedTools.toolName}}</v-list-item-subtitle>
+                                        <v-list-item-subtitle>Projets utilisant ces outils :</v-list-item-subtitle>
+                                        <v-chip-group mandatory class="primary--text"
+                                                      v-for="proj in selectedTools.project"
+                                                      :key="proj.id">
+                                            <v-chip class="ma-2">
+                                                <a :href="`/project/${proj.id}`">{{proj.projectName}}</a>
+                                            </v-chip>
+                                        </v-chip-group>
                                     </v-list-item-content>
                                 </v-list-item>
-                                <v-row align="center">
-                                    <v-col align="end">
-                                        <v-btn small class="text-lowercase ml-4" @click="closeTool">close</v-btn>
-                                    </v-col>
+                                <v-row>
+                                    <div class="flex-grow-1"></div>
+                                    <v-btn class="mx-2" x-small fab  @click="closeTool" elevation="1">
+                                        <v-icon>mdi-close</v-icon>
+                                    </v-btn>
                                 </v-row>
+                                </v-card>
                             </v-container>
                         </v-card-text>
                     </v-card>

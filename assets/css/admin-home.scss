@@ -1,20 +1,22 @@
+@import "accordion/aria.accordion";
+@import "multi-select/multi-select";
 
-.mainback{
-  background: grey;
-  padding:5em;
-  .btn{
-    background: rgba(101, 156, 189, 0.82);
-    &:hover{
-      background: #AAAAAA;
-    }
-  }
+.main-components {
+  background: rgba(230, 228, 227, 0.91);
+  padding: 5em;
   @extend .container-fluid;
+  @extend .btn;
 }
-.mainproject{
 
-  @extend .container;
-}
-.maintitle{
-  text-align: center;
-  @extend .container;
+multi-input {
+  border-radius: 3px;
+  border: 1px solid #a8a8a8;
+  display: inline-block;
+  padding: 0.2em;
+
+  .item {
+    padding-left: 0.2em;
+    padding-right: 0.2em;
+    margin: 0.1em;
+  }
 }

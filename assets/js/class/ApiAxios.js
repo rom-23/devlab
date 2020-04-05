@@ -1,5 +1,5 @@
 import axios from 'axios';
-
+const AUTH_TOKEN = '1212';
 // return an axios object connected to the API
 const Api = axios.create({
     baseURL: '/apip/',
@@ -10,8 +10,12 @@ const Api = axios.create({
         'Content-Type': 'application/json',
         "Access-Control-Allow-Origin": "*",
     },
+    auth: {
+        username: 'janedoe',
+        password: 's00pers3cret',
+    },
 });
-
+Api.defaults.headers.common.Authorization = AUTH_TOKEN;
 Api.interceptors.request.use(
     (request) => {
         console.log('Axios interceptor REQUEST ');

@@ -32,7 +32,7 @@ class Tools
     private $toolName;
 
     /**
-     * @ORM\ManyToMany(targetEntity="App\Entity\Project", inversedBy="tools")
+     * @ORM\ManyToMany(targetEntity="App\Entity\Project", mappedBy="tools")
      * @Groups({"tools:read"})
      */
     private $project;

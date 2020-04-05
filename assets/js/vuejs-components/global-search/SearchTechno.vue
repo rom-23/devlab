@@ -3,7 +3,7 @@
         <v-card>
             <v-row>
                 <v-col>
-                    <v-card dense class="pl-5 pr-5" flat>
+                    <v-card dense flat  class="pl-5 pr-5">
                         <v-toolbar dense elevation="2">
                             <v-toolbar-title class="subtitle-2">
                                 <v-icon class="blue--text text--lighten-2">mdi-flash</v-icon>
@@ -26,24 +26,32 @@
                                         @change="onSearchTechno(selected.id)"
                                         return-object/>
                             </v-col>
-                            <v-container class="mt-0 pt-0" v-if="selected">
+                            <v-container fluid v-if="selected">
+                                <v-card dense flat>
+                                <v-card-title class="primary--text p-0">
+                                    <span class="subtitle-2"> -> {{selected.technoName}} (id {{selected.id}})</span>
+                                </v-card-title>
                                 <v-list-item>
                                     <v-list-item-content>
-                                        <v-list-item-subtitle>Id : {{selected.id}}</v-list-item-subtitle>
-                                        <v-list-item-subtitle>Nom : {{selected.technoName}}</v-list-item-subtitle>
-                                        <v-list-item-subtitle class="pt-2">Description :</v-list-item-subtitle>
+                                        <v-list-item-subtitle>Description :</v-list-item-subtitle>
                                         <v-list-item class="caption">{{selected.technoDesc}}</v-list-item>
-                                        <v-list-item-subtitle class="pt-2">Projets utilisant cette technologie :
+                                        <v-list-item-subtitle class="pt-2 primary--text">Projets utilisants cette technologie :
                                         </v-list-item-subtitle>
-                                        <v-list-item class="caption" v-for="list in selected.project" :key="list.id">
-                                            <a :href="`/project/${list.id}`">{{list.projectName}}</a>
-                                        </v-list-item>
+                                        <v-chip-group mandatory class="primary--text"
+                                                      v-for="techno in selected.project"
+                                                      :key="techno.id">
+                                            <v-chip class="ma-2">
+                                                <a :href="`/project/${techno.id}`">{{techno.projectName}}</a>
+                                            </v-chip>
+                                        </v-chip-group>
                                     </v-list-item-content>
                                 </v-list-item>
-                                <v-row align="center">
-                                    <v-col align="end">
-                                        <v-btn small class="text-lowercase ml-4" @click="closeTechno">close</v-btn>
-                                    </v-col>
+                                </v-card>
+                                <v-row>
+                                    <div class="flex-grow-1"></div>
+                                    <v-btn class="mx-2" x-small fab  @click="closeTechno" elevation="1">
+                                        <v-icon>mdi-close</v-icon>
+                                    </v-btn>
                                 </v-row>
                             </v-container>
                         </v-card-text>
@@ -62,8 +70,8 @@
         data() {
             return {
                 technologies: [],
-                 searchResult: [],
-                 selected: null,
+                searchResult: [],
+                selected: null,
                 searchTechno: null,
                 loading: false
             };

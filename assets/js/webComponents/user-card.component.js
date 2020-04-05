@@ -25,8 +25,8 @@ customElements.define('user-card', class UserCardElement extends HTMLElement {
     --bg: #089e00;
     }
     h2 {
-    /*color: #1c7430;*/
-    color: var(--bg);
+    color: #1c7430;
+
     }
     ::slotted(p){
     color: #ff38b9;

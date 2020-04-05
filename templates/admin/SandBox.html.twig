@@ -1,0 +1,47 @@
+{% extends 'base.html.twig' %}
+{% block title %}SandBox{% endblock %}
+{% block body %}
+    <style>
+    .wrapper {
+    background-color: white;
+    width: 400px;
+    padding: 2rem;
+    box-shadow: 0 1.5rem 1rem -1rem rgba(0, 0, 0, 0.1);
+    border-radius: 0.3rem;
+    }
+    </style>
+    {{ include ('Include/NavBar.html.twig') }}
+    <div class="main-components">
+        <div class="row">
+            <div class="col-md-4">
+                <p>Web component 1</p>
+                <project-card>
+                    <a class="allProject btn btn-success" name="projects" slot="button">Liste des projets</a>
+                </project-card>
+            </div>
+            <div class="col-md-4">
+                <p>Web component 2</p>
+
+                <pp-modal content="projects">
+                    <h1 slot="header">Information Box</h1>
+               </pp-modal>
+            </div>
+
+            <div class="col-md-4">
+                <p>Web component 3</p>
+                {% for project in projects %}
+                    <project-details>
+                        <a class="displayData" href="#" name="projects/{{ project.id }}"
+                           slot="links">{{ project.projectName }}</a>
+                        <div slot="description" class="suite"></div>
+                        <div slot="attributes" class="secondsuite"></div>
+                    </project-details>
+                {% endfor %}
+            </div>
+
+        </div>
+    </div>
+{% endblock %}
+    {% block javascripts %}
+        {{ encore_entry_script_tags('training') }}
+    {% endblock %}

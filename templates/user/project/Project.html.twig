@@ -1,24 +1,6 @@
 {% extends 'base.html.twig' %}
 {% block title %}{% endblock %}
 {% block body %}
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <h1 class="navbar-brand">Admin </h1>
-        <div class="collapse navbar-collapse" id="navbarText">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="admin">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Edition</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Update</a>
-                </li>
-            </ul>
-            <span class="navbar-text"><a href="/" class="btn btn-success"> Go to Front-end</a></span>
-        </div>
-    </nav>
     <div class="container-fluid">
         <div class="mainback">
             <div class="container">
@@ -32,12 +14,46 @@
                     <div class="col-md-8 col-sm-6">
                         <p>Technologies utilisées dans ce projet :</p>
                         <div class="row">
-                            {% for techno in technologies %}
+                            {% for tech in techno %}
                                 <div class="col-md-4 col-sm-6">
                                     <div class="card">
                                         <div class="card-body text-center">
-                                            <h4 class="card-title">{{ techno.technoName }}</h4>
-                                            <p class="card-text text-center">{{ techno.technoDesc }}</p>
+                                            <h4 class="card-title">{{ tech.technoName }}</h4>
+                                            <p class="card-text text-center">{{ tech.technoDesc }}</p>
+                                        </div>
+                                        <div class="container mb-3 text-center">
+                                            <a href="#" class="btn">Read more</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-sm-6">
+                        <p>Outils utiliés  :</p>
+                        <div class="row">
+                            {% for tool in tools %}
+                                <div class="col-md-4 col-sm-6">
+                                    <div class="card">
+                                        <div class="card-body text-center">
+                                            <p class="card-text text-center">{{ tool.toolName }}</p>
+                                        </div>
+                                        <div class="container mb-3 text-center">
+                                            <a href="#" class="btn">Read more</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-sm-6">
+                        <p>Images :</p>
+                        <div class="row">
+                            {% for image in images %}
+                                <div class="col-md-4 col-sm-6">
+                                    <div class="card">
+                                        <div class="card-body text-center">
+                                        <p class="card-text text-center">{{ image.pictureFile }}</p>
                                         </div>
                                         <div class="container mb-3 text-center">
                                             <a href="#" class="btn">Read more</a>
@@ -51,7 +67,5 @@
             </div>
         </div>
     </div>
-
     </div>
-
 {% endblock %}

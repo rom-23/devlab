@@ -1,0 +1,34 @@
+<div class="card">
+    <div class="card-header">
+        {{ button|default('Enregistrer') }} un projet
+    </div>
+    <div class="card-body">
+        {{ form_start(form) }}
+        <div class="form-group">
+            <div class="row">
+                <div class="col-md-3">
+                    {{ form_row(form.projectName) }}
+                </div>
+                <div class="col-md-4">
+                    {{ form_row(form.projectDesc) }}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    {{ form_row((form.technologies),{'attr':{'class':"form-control-sm" }} ) }}
+                </div>
+                <div class="col-md-4">
+                    {{ form_row((form.tools),{'attr':{'class':"form-control-sm" }} ) }}
+                </div>
+                <div class="col-md-4">
+                    {{ form_row((form.pictures),{'attr':{'class':"form-control-sm" }} ) }}
+                </div>
+            </div>
+        </div>
+        {#{{ form_rest(form) }}#}
+        <button class="btn btn-success btn-sm">
+            {{ button|default('Enregistrer') }}
+        </button>
+        {{ form_end(form) }}
+    </div>
+</div>

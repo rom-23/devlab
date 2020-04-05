@@ -42,7 +42,7 @@ class Picture
     private $updatedAt;
 
     /**
-     * @ORM\ManyToMany(targetEntity="App\Entity\Project", inversedBy="pictures")
+     * @ORM\ManyToMany(targetEntity="App\Entity\Project", mappedBy="pictures")
      * @Groups({"pictures:read"})
      */
     private $project;

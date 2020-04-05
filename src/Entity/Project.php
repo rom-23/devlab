@@ -44,19 +44,19 @@ class Project
     private $createdAt;
 
     /**
-     * @ORM\ManyToMany(targetEntity="App\Entity\Tools", mappedBy="project")
+     * @ORM\ManyToMany(targetEntity="App\Entity\Tools", inversedBy="project")
      * @Groups({"project:read"})
      */
     private $tools;
 
     /**
-     * @ORM\ManyToMany(targetEntity="App\Entity\Technology", mappedBy="project")
+     * @ORM\ManyToMany(targetEntity="App\Entity\Technology", inversedBy="project")
      * @Groups({"project:read"})
      */
     private $technologies;
 
     /**
-     * @ORM\ManyToMany(targetEntity="App\Entity\Picture", mappedBy="project")
+     * @ORM\ManyToMany(targetEntity="App\Entity\Picture", inversedBy="project")
      * @Groups({"project:read"})
      */
     private $pictures;
@@ -145,13 +145,22 @@ class Project
         return $this->technologies;
     }
 
+  /**
+   * Set the value of Technologies
+   * @return self
+   */
+  public function setTechnologies( $technologies )
+  {
+    $this -> technologies = $technologies;
+    return $this;
+  }
+
     public function addTechnology(Technology $technology): self
     {
         if (!$this->technologies->contains($technology)) {
             $this->technologies[] = $technology;
             $technology->addProject($this);
         }
-
         return $this;
     }
 
@@ -165,7 +174,7 @@ class Project
         return $this;
     }
 
-    /**
+  /**
      * @return Collection|Picture[]
      */
     public function getPictures(): Collection

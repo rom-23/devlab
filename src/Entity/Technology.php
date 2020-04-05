@@ -43,7 +43,7 @@ class Technology
     private $createdAt;
 
     /**
-     * @ORM\ManyToMany(targetEntity="App\Entity\Project", inversedBy="technologies")
+     * @ORM\ManyToMany(targetEntity="App\Entity\Project", mappedBy="technologies")
      * @Groups({"global-search:read"})
      */
     private $project;

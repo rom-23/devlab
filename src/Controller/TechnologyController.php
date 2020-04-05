@@ -32,7 +32,7 @@ class TechnologyController extends AbstractController
     public function search(TechnologyRepository $repository, Technology $technology): Response
     {
         $techno = $repository->findOneBySomeField($technology->getId());
-        $projects = $techno->getProject();
+       $projects = $techno->getProject()->toArray();
         return $this->render('user/technology/Technology.html.twig', [
             'techno' => $techno,
             'projects' => $projects

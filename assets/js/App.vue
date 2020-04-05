@@ -6,8 +6,12 @@
             </v-container>
         </v-navigation-drawer>
         <v-app-bar app clipped-left>
-            <v-app-bar-nav-icon @click.stop="drawer = !drawer"/>
-            <v-toolbar-items class="nav myTitle"><a href="/">RomDev</a></v-toolbar-items>
+            <v-btn class="mx-2" small fab color="primary" @click.stop="drawer = !drawer" elevation="2">
+                <v-icon>mdi-home-search</v-icon>
+            </v-btn>
+            <v-toolbar-items class="nav myTitle">
+                <a href="/">RomDev</a>
+            </v-toolbar-items>
             <div class="flex-grow-1"></div>
             <v-toolbar-items class="nav">
                 <ul class="nav navLink ">

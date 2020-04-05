@@ -1,4 +1,3 @@
-
 var Encore = require('@symfony/webpack-encore');
 const VuetifyLoaderPlugin = require('vuetify-loader/lib/plugin');
 // const VuetifyLoaderPlugin = require('vuetify-loader/lib/plugin');
@@ -26,8 +25,9 @@ Encore
      * and one CSS file (e.g. app.scss) if your JavaScript imports CSS.
      */
     .addEntry('app', './assets/js/app.js')
-    //.addEntry('page1', './assets/js/page1.js')
-    //.addEntry('page2', './assets/js/page2.js')
+    .addEntry('adminHome', './assets/js/admin/adminHome.js')
+    .addEntry('adminProject', './assets/js/admin/adminProject.js')
+    .addEntry('training', './assets/js/admin/training.js')
     .addStyleEntry('mainstyle', './assets/css/app.scss')
     // When enabled, Webpack "splits" your files into smaller pieces for greater optimization.
     .splitEntryChunks()
@@ -35,14 +35,6 @@ Encore
     // will require an extra script tag for runtime.js
     // but, you probably want this, unless you're building a single-page app
     .enableSingleRuntimeChunk()
-
-    /*
-     * FEATURE CONFIG
-     *
-     * Enable & configure other features below. For a full
-     * list of features, see:
-     * https://symfony.com/doc/current/frontend.html#adding-more-features
-     */
     .cleanupOutputBeforeBuild()
     .enableBuildNotifications()
     .enableSourceMaps(!Encore.isProduction())
@@ -55,29 +47,26 @@ Encore
         config.corejs = 3;
     })
     .addPlugin(new VuetifyLoaderPlugin())
-    // enables Sass/SCSS support
-    // .enableSassLoader(function(options) {}, {
-    //     resolveUrlLoader: false
-    // })
-   .enableSassLoader(options => {
-          options.implementation = require('sass');
-          options.fiber = require('fibers');
 
-     },{resolveUrlLoader: false})
+    .enableSassLoader(options => {
+        options.implementation = require('sass');
+        options.fiber = require('fibers');
+
+    }, {resolveUrlLoader: false})
     .enableVueLoader()
-    // uncomment if you use TypeScript
-    //.enableTypeScriptLoader()
-    // .addPlugin(new VuetifyLoaderPlugin())
-    // uncomment to get integrity="..." attributes on your script & link tags
-    // requires WebpackEncoreBundle 1.4 or higher
-    //.enableIntegrityHashes(Encore.isProduction())
+// uncomment if you use TypeScript
+//.enableTypeScriptLoader()
+// .addPlugin(new VuetifyLoaderPlugin())
+// uncomment to get integrity="..." attributes on your script & link tags
+// requires WebpackEncoreBundle 1.4 or higher
+//.enableIntegrityHashes(Encore.isProduction())
 
-    // uncomment if you're having problems with a jQuery plugin
-    //.autoProvidejQuery()
+// uncomment if you're having problems with a jQuery plugin
+//.autoProvidejQuery()
 
-    // uncomment if you use API Platform Admin (composer req api-admin)
-    //.enableReactPreset()
-    //.addEntry('admin', './assets/js/admin.js')
+// uncomment if you use API Platform Admin (composer req api-admin)
+//.enableReactPreset()
+//.addEntry('admin', './assets/js/adminHome.js')
 ;
 
 module.exports = Encore.getWebpackConfig();

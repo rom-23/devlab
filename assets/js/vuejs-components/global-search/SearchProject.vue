@@ -6,64 +6,61 @@
                 <v-toolbar-title class="subtitle-2 ml-4 white--text">Rechercher sur le site</v-toolbar-title>
                 <v-spacer/>
             </v-toolbar>
-            <v-row>
-                <v-col>
-                    <v-card dense flat class="text-center">
-                        <v-card-title>
-                            <span class="subtitle-1">Liste des projets</span>
-                            <v-spacer/>
-                            <v-col cols="5">
-                                <v-text-field dense
-                                              v-model="searchProject"
-                                              append-icon="mdi-magnify"
-                                              label="Trouver un projet"
-                                              single-line
-                                              hide-details/>
-                            </v-col>
+            <v-card dense flat>
+                <v-card-title>
+                    <v-col cols="5">
+                        <v-text-field dense
+                                      v-model="searchProject"
+                                      prepend-inner-icon="mdi-magnify"
+                                      label="Trouver un projet"
+                                      single-line
+                                      hide-details/>
+                    </v-col>
+                </v-card-title>
+                <v-data-table dense class="datatable"
+                              :headers="headers"
+                              :items="projectList"
+                              :search="searchProject"
+                              return-object
+                              @click:row="handleClick">
+                </v-data-table>
+                <v-container  v-if="projectDetails">
+                    <v-card>
+                        <v-card-title class="primary--text">
+                            <span class="subtitle-2">Fiche du projet -> {{projectDetails.projectName}} (id {{projectDetails.id}})</span>
                         </v-card-title>
-                        <v-data-table dense class="datatable"
-                                      :headers="headers"
-                                      :items="projectList"
-                                      :search="searchProject"
-                                      return-object
-                                      @click:row="handleClick">
-                        </v-data-table>
-                        <v-container class="mt-0 pt-0" v-if="projectDetails">
-                            <v-card class="p-3">
-                                <v-card-title class="primary--text">
-                                    <span class="subtitle-2">Fiche du projet -> {{projectDetails.projectName}} (id {{projectDetails.id}})</span>
-                                </v-card-title>
-                                <v-list-item>
-                                    <v-list-item-content>
-                                        <v-list-item-subtitle>Description :</v-list-item-subtitle>
-                                        <v-list-item class="caption">{{projectDetails.projectDesc}}</v-list-item>
-                                        <v-list-item-subtitle>Technologies utilisées :</v-list-item-subtitle>
-                                        <v-chip-group mandatory class="primary--text"
-                                                      v-for="listTechno in projectDetails.technologies"
-                                                      :key="listTechno.tecnhoName">
-                                            <v-chip class="ma-2">
-                                                <a :href="`/technology/${listTechno.id}`">{{listTechno.technoName}}</a>
-                                            </v-chip>
-                                        </v-chip-group>
-                                        <v-list-item-subtitle>Outils utilisés :</v-list-item-subtitle>
-                                        <v-chip-group mandatory active-class="primary--text"
-                                                      v-for="listTools in projectDetails.tools" :key="listTools.toolName">
-                                            <v-chip class="ma-2">
-                                                <a :href="`/tools/${listTools.id}`">{{listTools.toolName}}</a>
-                                            </v-chip>
-                                        </v-chip-group>
-                                    </v-list-item-content>
-                                </v-list-item>
-                                <v-row>
-                                    <v-col>
-                                        <v-btn small class="text-lowercase" @click="closeProject">close</v-btn>
-                                    </v-col>
-                                </v-row>
-                            </v-card>
-                        </v-container>
+                        <v-card-text class="text-center">
+                        <v-list-item>
+                            <v-list-item-content>
+                                <v-list-item class="caption">{{projectDetails.projectDesc}}</v-list-item>
+                                <v-list-item-subtitle>Technologies utilisées :</v-list-item-subtitle>
+                                <v-chip-group mandatory class="primary--text"
+                                              v-for="listTechno in projectDetails.technologies"
+                                              :key="listTechno.tecnhoName">
+                                    <v-chip class="ma-2">
+                                        <a :href="`/technology/${listTechno.id}`">{{listTechno.technoName}}</a>
+                                    </v-chip>
+                                </v-chip-group>
+                                <v-list-item-subtitle>Outils utilisés :</v-list-item-subtitle>
+                                <v-chip-group mandatory active-class="primary--text"
+                                              v-for="listTools in projectDetails.tools"
+                                              :key="listTools.toolName">
+                                    <v-chip class="ma-2">
+                                        <a :href="`/tools/${listTools.id}`">{{listTools.toolName}}</a>
+                                    </v-chip>
+                                </v-chip-group>
+                            </v-list-item-content>
+                        </v-list-item>
+
+                        <v-row>
+                            <div class="flex-grow-1"></div>
+                            <v-btn class="mx-2" x-small fab @click="closeProject" elevation="1">
+                                <v-icon>mdi-close</v-icon>
+                            </v-btn>
+                        </v-row></v-card-text>
                     </v-card>
-                </v-col>
-            </v-row>
+                </v-container>
+            </v-card>
         </v-card>
     </v-container>
 </template>

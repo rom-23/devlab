@@ -1,10 +1,8 @@
 <template>
     <v-container fluid>
-
             <SearchProject/>
             <SearchTechno/>
             <SearchTool/>
-
     </v-container>
 </template>
 <script>

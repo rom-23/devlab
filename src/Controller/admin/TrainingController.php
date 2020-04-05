@@ -7,19 +7,18 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-class AdminController extends AbstractController
+class TrainingController extends AbstractController
 {
   /**
-   * @Route("/admin", name="admin.home")
+   * @Route("/training", name="training")
    * @param ProjectRepository $projectRepository
    * @return Response
    */
-    public function admin(ProjectRepository $projectRepository): Response
-    {
-      $projects = $projectRepository->findAll();
-        return $this->render('admin/AdminHome.html.twig', [
+  public function training(ProjectRepository $projectRepository): Response
+  {
+      $projects = $projectRepository -> findAll();
+        return $this -> render( 'admin/SandBox.html.twig', [
           'projects' => $projects
         ]);
-    }
-
+  }
 }

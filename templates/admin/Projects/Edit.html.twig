@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    {{ include ('Include/NavBar.html.twig') }}
+    <div class="container mt-4">
+        {{ include ('admin/Projects/_form.html.twig',{form:form, button: 'Editer'}) }}
+    </div>
+{% endblock %}
+
+{% block stylesheets %}
+{% endblock %}
+
+{% block javascripts %}
+
+{% endblock %}

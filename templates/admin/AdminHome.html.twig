@@ -1,73 +1,78 @@
 {% extends 'base.html.twig' %}
-{% block title %}Hello AdminController!{% endblock %}
+{% block title %}Admin{% endblock %}
+
 {% block body %}
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <h1 class="navbar-brand">Admin </h1>
-        <div class="collapse navbar-collapse" id="navbarText">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="admin">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Edition</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Update</a>
-                </li>
-            </ul>
-            <span class="navbar-text"><a href="/" class="btn btn-success"> Go to Front-end</a></span>
-        </div>
-    </nav>
-    <div class="container-fluid">
-        <div class="mainback">
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="container">
-                        <p>Web component 2</p>
-                        <project-card>
-                            <a class="allProject btn btn-primary" name="projects" slot="button">open
-                                database</a>
-                        </project-card>
+    {{ include ('Include/NavBar.html.twig') }}
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-md-12">
+                <div data-aria-accordion
+                     data-multi
+                     data-transition
+                     data-default="none"
+                     id="accGen">
+                    <h3 data-aria-accordion-heading>
+                        Chapter 1
+                    </h3>
+                    <div data-aria-accordion-panel>
+                        <p>
+                            Here is the first panel of content.
+                        </p>
+                        <p>
+                            This particular accordion example can have multiple opened panels at a time, or every panel
+                            closed.
+                        </p>
                     </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="mainproject">
-                        <p>Web component 1</p>
-                        {% for project in projects %}
-                            <project-details>
-                                <a class="displayData" href="#" name="projects/{{ project.id }}"
-                                   slot="links">{{ project.projectName }}</a>
-                                <div slot="description" class="suite"></div>
-                                <div slot="attributes" class="secondsuite"></div>
-                            </project-details>
-                        {% endfor %}
+                    <h3 data-aria-accordion-heading>
+                        Chapter 2
+                    </h3>
+                    <div data-aria-accordion-panel>
+                        <p>
+                            By using the <code>data-multi</code> attribute, multiple
+                            panels can be opened at once.
+                        </p>
+                    </div>
+                    <h3 data-aria-accordion-heading>
+                        Chapter 3
+                    </h3>
+                    <div data-aria-accordion-panel>
+                        <p>
+                            The <code>data-default="none"</code> attribute is used to
+                            indicate that no panel will be open by default, when the
+                            accordion is initially rendered.
+                        </p>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="container">
-                    <p>List of categories</p>
-                    <div class="row">
-                        {% for category in categories %}
-                            <div class="col-md-3 col-sm-6">
-                                <div class="card">
-                                    <div class="card-body text-center">
-                                        <h4 class="card-title">{{ category.categoryName }}</h4>
-                                        <img class="img-thumbnail" src="{{ asset('images/empty.jpg') }}" alt="">
-                                        <p class="card-text text-center">{{ category.categoryDesc }}</p>
-                                    </div>
-                                    <div class="container mb-3 text-center">
-                                        <a href="#" class="btn">Read more</a>
-                                    </div>
-                                </div>
-                            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-2">
+                <pp-modal content="admin Home">
+                    <h1 slot="header">Information Box</h1>
+                </pp-modal>
+            </div>
+            <div class="col-md-5">
+                <div class="form-inline">
+                <multi-input>
+                    <input list="speakers">
+                    <datalist id="speakers">
+                        {% for project in projects %}
+                        <option value="{{ project.id }}">{{ project.projectName }}</option>
+
                         {% endfor %}
-                    </div>
-                    <div class="pagination mt-3">
-                        {{ knp_pagination_render(categories) }}
-                    </div>
+                    </datalist>
+                </multi-input>
+                <button class="btn btn-success btn-sm ml-2" id="get">Get values</button>
+                <span id="values"></span>
                 </div>
+            </div>
+            <div class="col-md-5">
+                <p>Multiselect Auto-Complete</p>
+                <div class="autocomplete-select"></div>
             </div>
         </div>
     </div>
 {% endblock %}
+    {% block javascripts %}
+        {{ encore_entry_script_tags('adminHome') }}
+    {% endblock %}
