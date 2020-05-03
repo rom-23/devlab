@@ -27,7 +27,7 @@
                         Blog</a>
                     <a href="#contactMe" @click.prevent="scrollTo('#contactMe')">
                         Contact</a>
-                    <a href="/admin">Back-end</a>
+                    <a href="/backend">Back-end</a>
                 </ul>
             </v-toolbar-items>
         </v-app-bar>

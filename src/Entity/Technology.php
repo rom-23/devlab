@@ -113,6 +113,7 @@ class Technology
     {
         if (!$this->project->contains($project)) {
             $this->project[] = $project;
+            $project->addTechnology($this);
         }
 
         return $this;
@@ -122,6 +123,7 @@ class Technology
     {
         if ($this->project->contains($project)) {
             $this->project->removeElement($project);
+            $project->removeTechnology($this);
         }
 
         return $this;
@@ -138,4 +140,8 @@ class Technology
 
         return $this;
     }
+  public function __toString()
+  {
+    return $this->getTechnoName();
+  }
 }

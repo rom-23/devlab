@@ -1,0 +1,18 @@
+easy_admin:
+  entities:
+    Technology:
+      class: App\Entity\Technology
+
+      list:
+        help: 'The items in this entity can NOT be deleted here, Products must be = 0'
+        actions:
+          - {name: 'edit', icon: 'pencil', label: false, css_class: 'btn btn-secondary'}
+          - {name: 'delete', icon: 'trash', label: false, css_class: 'btn btn-danger'}
+        fields: ['id','technoName','technoDesc','createdAt','project','category']
+      form:
+        fields:
+          - {property: 'technoName'}
+          - {property: 'technoDesc'}
+          - {property: 'project'}
+          - {property: 'category'}
+          - {property: 'createdAt'}

@@ -71,6 +71,7 @@ class Tools
     {
         if (!$this->project->contains($project)) {
             $this->project[] = $project;
+            $project->addTool($this);
         }
 
         return $this;
@@ -80,8 +81,13 @@ class Tools
     {
         if ($this->project->contains($project)) {
             $this->project->removeElement($project);
+            $project->removeTool($this);
         }
 
         return $this;
     }
+  public function __toString()
+  {
+    return $this->getToolName();
+  }
 }

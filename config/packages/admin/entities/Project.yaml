@@ -1,0 +1,35 @@
+easy_admin:
+  entities:
+    Project:
+      class: App\Entity\Project
+      list:
+        title: "All development projects"
+        collapse_actions: true
+        actions: ['show','edit','delete']
+        fields: ['id','pictures','projectName','projectDesc','tools','pictures','technologies' ,'createdAt','updatedAt']
+        filters: ['tools', 'pictures', 'technologies']
+      show:
+        fields:
+          - {property: 'projectName'}
+          - {property: 'projectDesc', type: 'raw'}
+          - {property: 'createdAt'}
+          - {property: 'updatedAt'}
+          - {property: 'tools'}
+          - {property: 'pictures'}
+          - {property: 'technologies'}
+      form:
+        fields:
+          - {type: 'group', label: 'General',icon: 'pencil', css_class: 'col-md-6'}
+          - {property: 'projectName'}
+          - {property: 'projectDesc', type: 'text_editor'}
+          - {property: 'createdAt'}
+          - {property: 'updatedAt'}
+          - {type: 'group', label: 'Options',css_class: 'col-md-5'}
+          - {property: 'tools'}
+          - {property: 'technologies'}
+          - {type: 'group', label: 'Attachments',css_class: 'col-md-5', icon: 'clip'}
+          - {property: 'pictures'}
+      edit:
+        help: " Hello there"
+#        fields:
+#          - {property: 'tools'}

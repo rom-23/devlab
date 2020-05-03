@@ -1,0 +1,16 @@
+easy_admin:
+  design:
+    menu:
+      - label: 'Projects'
+        icon: 'newspaper-o'
+        children:
+          - {entity: 'Project', icon: 'th-list', label: 'Projects', css_class: 'default', default: true}
+          - {entity: 'Category', icon: 'layer-group', label: 'Categories'}
+          - {entity: 'Technology', icon: 'list', label: 'Technologies'}
+          - {entity: 'Picture', icon: 'image', label: 'Images'}
+          - {entity: 'Tools', icon: 'clone', label: 'Tools'}
+      - label: 'Users'
+        icon: 'user'
+        children:
+          - {entity: 'User', icon: 'user', label: 'User'}
+

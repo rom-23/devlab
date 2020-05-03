@@ -1,0 +1,15 @@
+easy_admin:
+  entities:
+    Tools:
+      class: App\Entity\Tools
+
+      list:
+        help: 'The items in this entity can NOT be deleted here, Products must be = 0'
+        actions:
+          - {name: 'edit', icon: 'pencil', label: false, css_class: 'btn btn-secondary'}
+          - {name: 'delete', icon: 'trash', label: false, css_class: 'btn btn-danger'}
+        fields: ['id','toolName','project']
+      form:
+        fields:
+          - {property: 'toolName'}
+          - {property: 'project'}

@@ -10,7 +10,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class AdminController extends AbstractController
 {
   /**
-   * @Route("/admin", name="admin.home")
+   * @Route("/backend", name="backend.home")
    * @param ProjectRepository $projectRepository
    * @return Response
    */
