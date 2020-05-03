@@ -6,8 +6,8 @@ easy_admin:
         title: "All development projects"
         collapse_actions: true
         actions: ['show','edit','delete']
-        fields: ['id','pictures','projectName','projectDesc','tools','pictures','technologies' ,'createdAt','updatedAt']
-        filters: ['tools', 'pictures', 'technologies']
+        fields: ['id','projectName','attachments','projectDesc', 'tools','technologies' ,'createdAt','updatedAt']
+        filters: ['tools', 'technologies']
       show:
         fields:
           - {property: 'projectName'}
@@ -15,8 +15,8 @@ easy_admin:
           - {property: 'createdAt'}
           - {property: 'updatedAt'}
           - {property: 'tools'}
-          - {property: 'pictures'}
           - {property: 'technologies'}
+          - {property: 'attachments'}
       form:
         fields:
           - {type: 'group', label: 'General',icon: 'pencil', css_class: 'col-md-6'}
@@ -28,8 +28,5 @@ easy_admin:
           - {property: 'tools'}
           - {property: 'technologies'}
           - {type: 'group', label: 'Attachments',css_class: 'col-md-5', icon: 'clip'}
-          - {property: 'pictures'}
-      edit:
-        help: " Hello there"
-#        fields:
-#          - {property: 'tools'}
+          - {property: 'attachments'}
+

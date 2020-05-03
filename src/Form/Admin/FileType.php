@@ -2,7 +2,7 @@
 
 namespace App\Form\Admin;
 
-use App\Entity\Picture;
+use App\Entity\Attachment;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
@@ -13,13 +13,13 @@ class FileType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('imageFile',VichFileType::class, [ 'allow_delete' => true ]);
+            ->add('imageFile',VichFileType::class);
     }
 
     public function configureOptions(OptionsResolver $resolver)
     {
         $resolver->setDefaults([
-            'data_class' => Picture::class,
+            'data_class' => Attachment::class,
         ]);
     }
 }

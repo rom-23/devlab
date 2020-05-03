@@ -2,36 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df923285-fd74-4722-a48b-203362445aa5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.php-version" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/admin/config.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/admin/entities/Category.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/admin/entities/Picture.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/admin/entities/Project.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/admin/entities/Technology.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/admin/entities/Tools.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/admin/entities/User.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/admin/menu.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/uploads/images/project/5de94b5fe3c77083865851.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/uploads/images/project/5de94b99d9781078007484.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/devLab.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/devLab.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/packages/admin/entities/Attachment.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/admin/training.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/admin/training.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/admin/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/admin/AdminController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Picture.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Picture.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/admin/entities/Picture.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/admin/entities/Project.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/admin/entities/Project.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/admin/menu.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/admin/menu.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/ProjectController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ProjectController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Picture.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/Project.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Project.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Technology.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Technology.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Tools.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Tools.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Include/NavBar.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Include/NavBar.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/Admin/FileType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/Admin/FileType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/PictureRepository.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/admin/Projects/_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/Projects/_form.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/user/project/Project.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/project/Project.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -202,7 +184,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../devblog" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -346,7 +328,7 @@
       <workItem from="1588358482136" duration="1233000" />
       <workItem from="1588402139121" duration="28433000" />
       <workItem from="1588452173971" duration="110000" />
-      <workItem from="1588489253601" duration="270000" />
+      <workItem from="1588489253601" duration="23977000" />
     </task>
     <servers />
   </component>
@@ -363,10 +345,10 @@
     </state>
     <state x="699" y="671" width="579" height="423" key="#com.intellij.fileTypes.FileTypeChooser/1920.0.1920.1080/0.339.1920.1080@0.339.1920.1080" timestamp="1584874212096" />
     <state x="742" y="351" width="616" height="420" key="#com.intellij.fileTypes.FileTypeChooser/1920.0.1920.1080/67.27.1853.1053@67.27.1853.1053" timestamp="1588403260090" />
-    <state x="801" y="259" width="419" height="569" key="#com.intellij.ide.util.MemberChooser" timestamp="1588404645918">
+    <state x="801" y="259" width="444" height="576" key="#com.intellij.ide.util.MemberChooser" timestamp="1588504145168">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="801" y="259" width="419" height="569" key="#com.intellij.ide.util.MemberChooser/1920.0.1920.1080/67.27.1853.1053@67.27.1853.1053" timestamp="1588404645918" />
+    <state x="801" y="259" width="444" height="576" key="#com.intellij.ide.util.MemberChooser/1920.0.1920.1080/67.27.1853.1053@67.27.1853.1053" timestamp="1588504145168" />
     <state x="515" y="17" width="937" height="1060" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1585775451602">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
@@ -375,22 +357,22 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="726" y="289" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/1920.0.1920.1080/67.27.1853.1053@67.27.1853.1053" timestamp="1586103303998" />
-    <state x="726" y="298" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1588446073105">
+    <state x="726" y="298" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1588503291750">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="683" y="617" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/1920.0.1920.1080/0.339.1920.1080@0.339.1920.1080" timestamp="1584986229791" />
-    <state x="726" y="298" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/1920.0.1920.1080/67.27.1853.1053@67.27.1853.1053" timestamp="1588446073105" />
+    <state x="726" y="298" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/1920.0.1920.1080/67.27.1853.1053@67.27.1853.1053" timestamp="1588503291750" />
     <state x="726" y="364" width="525" height="359" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1585177460239">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="726" y="364" width="525" height="359" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/1920.0.1920.1080/67.27.1853.1053@67.27.1853.1053" timestamp="1585177460239" />
-    <state x="776" y="287" width="424" height="491" key="FileChooserDialogImpl" timestamp="1588452218615">
+    <state x="776" y="287" width="424" height="491" key="FileChooserDialogImpl" timestamp="1588518678093">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="735" y="606" width="424" height="491" key="FileChooserDialogImpl/1920.0.1920.1080/0.339.1920.1080@0.339.1920.1080" timestamp="1586585604013" />
     <state x="2655" y="258" width="424" height="491" key="FileChooserDialogImpl/1920.0.1920.1080/0.339.1920.1080@1920.0.1920.1080" timestamp="1586805225217" />
     <state x="2655" y="267" width="424" height="491" key="FileChooserDialogImpl/1920.0.1920.1080/67.27.1853.1053@1920.0.1920.1080" timestamp="1588080004485" />
-    <state x="776" y="287" width="424" height="520" key="FileChooserDialogImpl/1920.0.1920.1080/67.27.1853.1053@67.27.1853.1053" timestamp="1588452218615" />
+    <state x="776" y="287" width="424" height="520" key="FileChooserDialogImpl/1920.0.1920.1080/67.27.1853.1053@67.27.1853.1053" timestamp="1588518678093" />
     <state x="776" y="251" width="424" height="500" key="FileChooserDialogImpl/67.27.1853.1052@67.27.1853.1052" timestamp="1585305899537" />
     <state width="1807" height="261" key="GridCell.Tab.0.bottom" timestamp="1585001840495">
       <screen x="0" y="339" width="1920" height="1080" />

@@ -7,8 +7,8 @@ easy_admin:
           - {entity: 'Project', icon: 'th-list', label: 'Projects', css_class: 'default', default: true}
           - {entity: 'Category', icon: 'layer-group', label: 'Categories'}
           - {entity: 'Technology', icon: 'list', label: 'Technologies'}
-          - {entity: 'Picture', icon: 'image', label: 'Images'}
           - {entity: 'Tools', icon: 'clone', label: 'Tools'}
+          - {entity: 'Attachment', icon: 'clone', label: 'Attachment'}
       - label: 'Users'
         icon: 'user'
         children:

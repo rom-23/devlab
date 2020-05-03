@@ -7,15 +7,10 @@ use DateTime;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
-use Exception;
-use Symfony\Component\HttpFoundation\File\File;
+use Vich\UploaderBundle\Mapping\Annotation as Vich;
 use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
-use Symfony\Component\HttpFoundation\File\UploadedFile;
 use Symfony\Component\Serializer\Annotation\Groups;
 
-use Symfony\Component\Validator\Constraints as Assert;
-
-use Vich\UploaderBundle\Mapping\Annotation as Vich;
 
 /**
  * @ORM\Entity(repositoryClass="App\Repository\ProjectRepository")
@@ -67,12 +62,6 @@ class Project
    */
   private $technologies;
 
-  /**
-   * @ORM\ManyToMany(targetEntity="App\Entity\Picture", inversedBy="project")
-   * @Groups({"project:read"})
-   */
-  private $pictures;
-
 
   /**
    * @ORM\Column(type="datetime")
@@ -81,6 +70,13 @@ class Project
    */
   private $updatedAt;
 
+  /**
+   * @ORM\ManyToMany(targetEntity="App\Entity\Attachment", inversedBy="projects")
+   * @Groups("project:read")
+   */
+  private $attachments;
+
+
 
   public function __construct()
   {
@@ -88,9 +84,9 @@ class Project
     $this->createdAt = new DateTime();
     $this->updatedAt = new DateTime();
     $this->technologies = new ArrayCollection();
-    $this->pictures = new ArrayCollection();
-  }
+    $this->attachments = new ArrayCollection();
 
+  }
 
   public function getId(): ?int
   {
@@ -208,35 +204,43 @@ class Project
       return $this;
   }
 
-  /**
-   * @return Collection|Picture[]
-   */
-  public function getPictures(): Collection
-  {
-      return $this->pictures;
-  }
 
-  public function addPicture(Picture $picture): self
-  {
-      if (!$this->pictures->contains($picture)) {
-          $this->pictures[] = $picture;
-      }
-
-      return $this;
-  }
-
-  public function removePicture(Picture $picture): self
-  {
-      if ($this->pictures->contains($picture)) {
-          $this->pictures->removeElement($picture);
-      }
-
-      return $this;
-  }
 
   public function __toString()
   {
     return $this->projectName;
   }
+
+  /**
+   * @return Collection|Attachment[]
+   */
+  public function getAttachments(): Collection
+  {
+      return $this->attachments;
+  }
+
+  public function addAttachment(Attachment $attachment): self
+  {
+      if (!$this->attachments->contains($attachment)) {
+          $this->attachments[] = $attachment;
+      }
+
+      return $this;
+  }
+
+  public function removeAttachment(Attachment $attachment): self
+  {
+      if ($this->attachments->contains($attachment)) {
+          $this->attachments->removeElement($attachment);
+      }
+
+      return $this;
+  }
+
+
+
+
+
+
 
 }

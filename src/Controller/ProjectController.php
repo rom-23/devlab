@@ -36,7 +36,7 @@ class ProjectController extends AbstractController
   {
     $showProject = $repository->findOneBySomeField($project->getId());
     $technologies = $showProject->getTechnologies();
-    $images = $showProject->getPictures();
+    $images = $showProject->getAttachments();
     $tools = $showProject->getTools();
     return $this->render('user/project/Project.html.twig', [
       'techno' => $technologies,
