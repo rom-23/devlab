@@ -2,14 +2,18 @@ easy_admin:
   entities:
     Attachment:
       class: App\Entity\Attachment
-
       list:
         help: 'The items in this entity can NOT be deleted here, Products must be = 0'
         actions:
           - {name: 'edit', icon: 'pencil', label: false, css_class: 'btn btn-secondary'}
           - {name: 'delete', icon: 'trash', label: false, css_class: 'btn btn-danger'}
-        fields: ['id','image','projects']
+        fields: ['id','projects', { property: 'image', type: 'image', base_path: '%app.path.project_images%',label: 'Photo' }]
       form:
         fields:
-          - {property: 'image'}
           - {property: 'projects'}
+          - {property: 'imageFile', type: 'vich_image', label: 'Apercu image'}
+          - {property: 'updatedAt'}
+          - {property: 'createdAt'}
+      show:
+        fields:
+          - { property: 'image', type: 'image', base_path: '%app.path.project_images%' }

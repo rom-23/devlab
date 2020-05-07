@@ -16,7 +16,7 @@ easy_admin:
           - {property: 'updatedAt'}
           - {property: 'tools'}
           - {property: 'technologies'}
-          - {property: 'attachments'}
+          - {property: 'attachments', template: 'admin/Projects/_images.html.twig' }
       form:
         fields:
           - {type: 'group', label: 'General',icon: 'pencil', css_class: 'col-md-6'}
@@ -28,5 +28,6 @@ easy_admin:
           - {property: 'tools'}
           - {property: 'technologies'}
           - {type: 'group', label: 'Attachments',css_class: 'col-md-5', icon: 'clip'}
-          - {property: 'attachments'}
+          #          - {property: 'attachments'}
+          - {property: 'attachments', type: 'collection', type_options: {entry_type: 'App\Form\Admin\ImageType', by_reference: false} }
 

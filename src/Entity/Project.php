@@ -7,6 +7,7 @@ use DateTime;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
+
 use Vich\UploaderBundle\Mapping\Annotation as Vich;
 use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 use Symfony\Component\Serializer\Annotation\Groups;
@@ -19,7 +20,7 @@ use Symfony\Component\Serializer\Annotation\Groups;
  *     denormalizationContext={"groups"={"project:write"}}
  *     )
  * @UniqueEntity("projectName")
- * @Vich\Uploadable
+ * @Vich\Uploadable()
  */
 class Project
 {
@@ -71,11 +72,10 @@ class Project
   private $updatedAt;
 
   /**
-   * @ORM\ManyToMany(targetEntity="App\Entity\Attachment", inversedBy="projects")
+   * @ORM\ManyToMany(targetEntity="App\Entity\Attachment", inversedBy="projects", cascade={"persist"})
    * @Groups("project:read")
    */
   private $attachments;
-
 
 
   public function __construct()
@@ -214,7 +214,7 @@ class Project
   /**
    * @return Collection|Attachment[]
    */
-  public function getAttachments(): Collection
+  public function getAttachments()
   {
       return $this->attachments;
   }
@@ -232,6 +232,7 @@ class Project
   {
       if ($this->attachments->contains($attachment)) {
           $this->attachments->removeElement($attachment);
+
       }
 
       return $this;
