@@ -2,16 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df923285-fd74-4722-a48b-203362445aa5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/templates/admin/Projects/_images.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/packages/admin/entities/Attachment.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/admin/entities/Attachment.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/admin/entities/Category.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/admin/entities/Category.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/packages/admin/entities/Project.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/admin/entities/Project.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/admin/entities/Technology.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/admin/entities/Technology.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/admin/entities/Tools.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/admin/entities/Tools.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/admin/entities/User.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/admin/entities/User.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/vich_uploader.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/vich_uploader.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/images/project/5de94b5fe3c77083865851.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/images/project/5de94b99d9781078007484.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/images/project/5eb4439f9a463524610175.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/images/project/5eb487ac6c35c431496237.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/images/project/5eb4891f660da463329781.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/images/project/5eb4891f662af702478178.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/images/project/5eb48aac33ab6553498167.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/images/project/5eb48b44169b8057010227.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/images/project/5eb48d4575d79393131866.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/images/project/5eb48d72ef5f8769175068.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/Attachment.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Attachment.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/Project.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Project.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/Admin/FileType.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Technology.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Technology.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Tools.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Tools.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/Admin/ImageType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/Admin/ImageType.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -328,7 +340,7 @@
       <workItem from="1588452173971" duration="110000" />
       <workItem from="1588489253601" duration="26943000" />
       <workItem from="1588785511941" duration="599000" />
-      <workItem from="1588862652872" duration="24379000" />
+      <workItem from="1588862652872" duration="36261000" />
     </task>
     <servers />
   </component>
@@ -366,13 +378,13 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="726" y="364" width="525" height="359" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/1920.0.1920.1080/67.27.1853.1053@67.27.1853.1053" timestamp="1585177460239" />
-    <state x="776" y="287" width="424" height="491" key="FileChooserDialogImpl" timestamp="1588871708262">
+    <state x="776" y="287" width="424" height="491" key="FileChooserDialogImpl" timestamp="1588926800269">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="735" y="606" width="424" height="491" key="FileChooserDialogImpl/1920.0.1920.1080/0.339.1920.1080@0.339.1920.1080" timestamp="1586585604013" />
     <state x="2655" y="258" width="424" height="491" key="FileChooserDialogImpl/1920.0.1920.1080/0.339.1920.1080@1920.0.1920.1080" timestamp="1586805225217" />
     <state x="2655" y="267" width="424" height="491" key="FileChooserDialogImpl/1920.0.1920.1080/67.27.1853.1053@1920.0.1920.1080" timestamp="1588080004485" />
-    <state x="776" y="287" width="424" height="520" key="FileChooserDialogImpl/1920.0.1920.1080/67.27.1853.1053@67.27.1853.1053" timestamp="1588871708262" />
+    <state x="776" y="287" width="424" height="520" key="FileChooserDialogImpl/1920.0.1920.1080/67.27.1853.1053@67.27.1853.1053" timestamp="1588926800269" />
     <state x="776" y="251" width="424" height="500" key="FileChooserDialogImpl/67.27.1853.1052@67.27.1853.1052" timestamp="1585305899537" />
     <state width="1807" height="261" key="GridCell.Tab.0.bottom" timestamp="1585001840495">
       <screen x="0" y="339" width="1920" height="1080" />
@@ -394,10 +406,10 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="484" y="243" width="824" height="533" key="IDE.errors.dialog/1920.0.1920.1080/67.27.1853.1053@67.27.1853.1053" timestamp="1585851645760" />
-    <state x="741" y="337" width="495" height="412" key="NewPhpClassDialog" timestamp="1588419735793">
+    <state x="741" y="337" width="527" height="412" key="NewPhpClassDialog" timestamp="1588892567250">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="741" y="337" width="495" height="412" key="NewPhpClassDialog/1920.0.1920.1080/67.27.1853.1053@67.27.1853.1053" timestamp="1588419735793" />
+    <state x="741" y="337" width="527" height="412" key="NewPhpClassDialog/1920.0.1920.1080/67.27.1853.1053@67.27.1853.1053" timestamp="1588892567250" />
     <state x="430" y="491" width="1022" height="737" key="SettingsEditor" timestamp="1586292889353">
       <screen x="0" y="339" width="1920" height="1080" />
     </state>
@@ -416,6 +428,10 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="630" y="120" width="747" height="840" key="find.popup/1920.0.1920.1080/67.27.1853.1053@67.27.1853.1053" timestamp="1581609879494" />
+    <state x="713" y="179" width="551" height="728" key="refactoring.ChangeSignatureDialog" timestamp="1588892879804">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="713" y="179" width="551" height="728" key="refactoring.ChangeSignatureDialog/1920.0.1920.1080/67.27.1853.1053@67.27.1853.1053" timestamp="1588892879804" />
     <state x="657" y="245" key="run.anything.popup" timestamp="1585493578585">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>

@@ -24,7 +24,8 @@ class Attachment
   private $id;
 
   /**
-   * @ORM\Column(type="string", length=255))
+   * @var string|null
+   * @ORM\Column(type="string", length=255, nullable=true)
    */
   private $image;
 
@@ -86,10 +87,6 @@ class Attachment
       return $this->image;
   }
 
-  /**
-   * @param string|null $image
-   * @return $this
-   */
   public function setImage(?string $image): self
   {
       $this->image = $image;
@@ -133,7 +130,7 @@ class Attachment
   {
       if (!$this->projects->contains($project)) {
           $this->projects[] = $project;
-          //$project->addAttachment($this);
+          $project->addAttachment($this);
       }
 
       return $this;
@@ -143,7 +140,7 @@ class Attachment
   {
       if ($this->projects->contains($project)) {
           $this->projects->removeElement($project);
-          //$project->removeAttachment($this);
+          $project->removeAttachment($this);
       }
 
       return $this;

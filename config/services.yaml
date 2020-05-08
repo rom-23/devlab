@@ -6,6 +6,8 @@
 parameters:
     locale: 'en'
     app.path.project_images: /uploads/images/project
+    app.path.techno_images: /uploads/images/techno
+    app.path.tools_images: /uploads/images/tools
 services:
     # default configuration for services in *this* file
     _defaults:

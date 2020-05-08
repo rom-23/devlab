@@ -4,12 +4,21 @@ easy_admin:
       class: App\Entity\Tools
 
       list:
-        help: 'The items in this entity can NOT be deleted here, Products must be = 0'
         actions:
           - {name: 'edit', icon: 'pencil', label: false, css_class: 'btn btn-secondary'}
           - {name: 'delete', icon: 'trash', label: false, css_class: 'btn btn-danger'}
-        fields: ['id','toolName','project']
+        fields: ['id','toolName','project',{ property: 'image', type: 'image', base_path: '%app.path.tools_images%',label: 'Logo'},'createdAt','updatedAt']
       form:
         fields:
           - {property: 'toolName'}
           - {property: 'project'}
+          - {property: 'imageFile', type: 'vich_image', label: 'Apercu image'}
+          - {property: 'createdAt'}
+          - {property: 'updatedAt'}
+      show:
+        fields:
+          - {property: 'toolName'}
+          - {property: 'project'}
+          - {property: 'createdAt'}
+          - {property: 'updatedAt'}
+          - {property: 'image', type: 'image', base_path: '%app.path.tools_images%' }

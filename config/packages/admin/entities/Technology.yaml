@@ -4,15 +4,25 @@ easy_admin:
       class: App\Entity\Technology
 
       list:
-        help: 'The items in this entity can NOT be deleted here, Products must be = 0'
         actions:
           - {name: 'edit', icon: 'pencil', label: false, css_class: 'btn btn-secondary'}
           - {name: 'delete', icon: 'trash', label: false, css_class: 'btn btn-danger'}
-        fields: ['id','technoName','technoDesc','createdAt','project','category']
+        fields: ['id','technoName','technoDesc',{ property: 'image', type: 'image', base_path: '%app.path.techno_images%',label: 'Logo'} ,'createdAt','updatedAt','project','category']
       form:
+        fields:
+          - {property: 'technoName'}
+          - {property: 'technoDesc'}
+          - {property: 'imageFile', type: 'vich_image', label: 'Apercu image'}
+          - {property: 'project'}
+          - {property: 'category'}
+          - {property: 'createdAt'}
+          - {property: 'updatedAt'}
+      show:
         fields:
           - {property: 'technoName'}
           - {property: 'technoDesc'}
           - {property: 'project'}
           - {property: 'category'}
           - {property: 'createdAt'}
+          - {property: 'updatedAt'}
+          - {property: 'image', type: 'image', base_path: '%app.path.techno_images%' }

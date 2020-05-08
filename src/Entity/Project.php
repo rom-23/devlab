@@ -52,7 +52,7 @@ class Project
   private $createdAt;
 
   /**
-   * @ORM\ManyToMany(targetEntity="App\Entity\Tools", inversedBy="project")
+   * @ORM\ManyToMany(targetEntity="App\Entity\Tools", inversedBy="project", cascade={"persist"})
    * @Groups({"project:read"})
    */
   private $tools;
@@ -214,7 +214,7 @@ class Project
   /**
    * @return Collection|Attachment[]
    */
-  public function getAttachments()
+  public function getAttachments(): Collection
   {
       return $this->attachments;
   }
@@ -232,7 +232,6 @@ class Project
   {
       if ($this->attachments->contains($attachment)) {
           $this->attachments->removeElement($attachment);
-
       }
 
       return $this;

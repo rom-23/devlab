@@ -25,9 +25,8 @@ easy_admin:
           - {property: 'createdAt'}
           - {property: 'updatedAt'}
           - {type: 'group', label: 'Options',css_class: 'col-md-5'}
-          - {property: 'tools'}
           - {property: 'technologies'}
+          - {property: 'tools'}
           - {type: 'group', label: 'Attachments',css_class: 'col-md-5', icon: 'clip'}
-          #          - {property: 'attachments'}
-          - {property: 'attachments', type: 'collection', type_options: {entry_type: 'App\Form\Admin\ImageType', by_reference: false} }
+          - {property: 'attachments', type: 'collection', type_options: {entry_type: 'App\Form\Admin\ImageType', by_reference: false, label: false} }
 
