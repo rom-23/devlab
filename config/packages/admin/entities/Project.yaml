@@ -19,14 +19,15 @@ easy_admin:
           - {property: 'attachments', template: 'admin/Projects/_images.html.twig' }
       form:
         fields:
-          - {type: 'group', label: 'General',icon: 'pencil', css_class: 'col-md-6'}
+          - {type: 'group', label: 'General',icon: 'pencil', css_class: 'col-md-8'}
           - {property: 'projectName'}
-          - {property: 'projectDesc', type: 'text_editor'}
-          - {property: 'createdAt'}
-          - {property: 'updatedAt'}
-          - {type: 'group', label: 'Options',css_class: 'col-md-5'}
+          - {property: 'createdAt', type_options: { widget: 'single_text' }}
+          - {property: 'updatedAt', type_options: { widget: 'single_text' }}
+          - {type: 'section'}
+          - {property: 'projectDesc', type: 'text_editor',label: 'Description du projet'}
+          - {type: 'group', label: 'Options',css_class: 'col-md-4'}
           - {property: 'technologies'}
           - {property: 'tools'}
-          - {type: 'group', label: 'Attachments',css_class: 'col-md-5', icon: 'clip'}
-          - {property: 'attachments', type: 'collection', type_options: {entry_type: 'App\Form\Admin\ImageType', by_reference: false, label: false} }
+          - {type: 'section', label: 'Fichiers joints'}
+          - {property: 'attachments', label: 'Attachments', type: 'collection', type_options: {entry_type: 'App\Form\Admin\ImageType', by_reference: false, label: false} }
 

@@ -74,26 +74,26 @@ class Tools
 
   public function getCreatedAt(): ?\DateTimeInterface
   {
-    return $this->createdAt;
+      return $this->createdAt;
   }
 
   public function setCreatedAt(\DateTimeInterface $createdAt): self
   {
-    $this->createdAt = $createdAt;
+      $this->createdAt = $createdAt;
 
-    return $this;
+      return $this;
   }
 
   public function getUpdatedAt(): ?\DateTimeInterface
   {
-    return $this->updatedAt;
+      return $this->updatedAt;
   }
 
   public function setUpdatedAt(\DateTimeInterface $updatedAt): self
   {
-    $this->updatedAt = $updatedAt;
+      $this->updatedAt = $updatedAt;
 
-    return $this;
+      return $this;
   }
 
   /**
@@ -117,31 +117,31 @@ class Tools
 
   public function getImage(): ?string
   {
-    return $this->image;
+      return $this->image;
   }
 
   public function setImage(?string $image): self
   {
-    $this->image = $image;
+      $this->image = $image;
 
-    return $this;
+      return $this;
   }
 
   public function getId(): ?int
   {
-    return $this->id;
+      return $this->id;
   }
 
   public function getToolName(): ?string
   {
-    return $this->toolName;
+      return $this->toolName;
   }
 
   public function setToolName(string $toolName): self
   {
-    $this->toolName = $toolName;
+      $this->toolName = $toolName;
 
-    return $this;
+      return $this;
   }
 
   /**
@@ -149,27 +149,27 @@ class Tools
    */
   public function getProject(): Collection
   {
-    return $this->project;
+      return $this->project;
   }
 
   public function addProject(Project $project): self
   {
-    if (!$this->project->contains($project)) {
-      $this->project[] = $project;
-      $project->addTool($this);
-    }
+      if (!$this->project->contains($project)) {
+          $this->project[] = $project;
+          $project->addTool($this);
+      }
 
-    return $this;
+      return $this;
   }
 
   public function removeProject(Project $project): self
   {
-    if ($this->project->contains($project)) {
-      $this->project->removeElement($project);
-      $project->removeTool($this);
-    }
+      if ($this->project->contains($project)) {
+          $this->project->removeElement($project);
+          $project->removeTool($this);
+      }
 
-    return $this;
+      return $this;
   }
 
   public function __toString()

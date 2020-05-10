@@ -15,9 +15,9 @@
           </v-toolbar>
           <v-card-text class="text-center p-0 m-0">
             <v-row class="justify-center">
-              <a href="#">
-              <v-img :src='require("../../images/logo3.png")' max-width="7em"/>
-              </a>
+<!--              <a href="#">-->
+<!--              <v-img :src='require("../../images/logo3.png")' max-width="7em"/>-->
+<!--              </a>-->
             </v-row>
           </v-card-text>
           <v-card-title primary-title class="layout justify-center">
@@ -67,12 +67,12 @@
             </v-btn>
           </v-toolbar>
           <v-card-text>
-          <a href="#">
-            <v-img
-            class="white--text align-end"
-            :src='require("../../images/growup-screen01.jpg")'>
-          </v-img>
-          </a>
+<!--          <a href="#">-->
+<!--            <v-img-->
+<!--            class="white&#45;&#45;text align-end"-->
+<!--            :src='require("../../images/growup-screen01.jpg")'>-->
+<!--          </v-img>-->
+<!--          </a>-->
           </v-card-text>
           <v-card-text class="white pt-3 text-center">
             Cras facilisis mi vitae nunc lobortis pharetra. Nulla volutpat tincidunt orne.
@@ -117,12 +117,12 @@
             </v-btn>
           </v-toolbar>
           <v-card-text>
-            <a href="#">
-              <v-img
-                class="text--black align-end"
-                :src= "require('../../images/webshop-screen02.jpg')">
-              </v-img>
-            </a>
+<!--            <a href="#">-->
+<!--              <v-img-->
+<!--                class="text&#45;&#45;black align-end"-->
+<!--                :src= "require('../../images/webshop-screen02.jpg')">-->
+<!--              </v-img>-->
+<!--            </a>-->
           </v-card-text>
           <v-card-text class="white pt-3 text-center">
             Cras facilisis mi vitae nunc lobortis pharetra. Nulla volutpat tincidunt orne.
@@ -160,7 +160,7 @@
         <v-card class="mx-auto transparent" elevation="4" outlined width="500">
           <v-card-text class="text-center">
             <v-row class="justify-center">
-              <v-img :src='require("../../images/logo.png")' max-width="7em"/>
+<!--              <v-img :src='require("../../images/logo.png")' max-width="7em"/>-->
             </v-row>
           </v-card-text>
           <v-card-title primary-title class="layout justify-center">
@@ -177,7 +177,7 @@
         <v-card class="mx-auto transparent" elevation="4" outlined width="500">
           <v-card-text class="text-center">
             <v-row class="justify-center">
-              <v-img :src='require("../../images/logo3.png")' max-width="7em"/>
+<!--              <v-img :src='require("../../images/logo3.png")' max-width="7em"/>-->
             </v-row>
           </v-card-text>
           <v-card-title primary-title class="layout justify-center">
@@ -194,7 +194,7 @@
         <v-card class="mx-auto transparent" elevation="4" outlined width="500">
           <v-card-text class="text-center">
             <v-row class="justify-center">
-              <v-img :src='require("../../images/logo3.png")' max-width="7em"/>
+<!--              <v-img :src='require("../../images/logo3.png")' max-width="7em"/>-->
             </v-row>
           </v-card-text>
           <v-card-title primary-title class="layout justify-center">

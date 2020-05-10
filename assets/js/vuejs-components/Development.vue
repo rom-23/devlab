@@ -3,10 +3,10 @@
       <v-row class="justify-center">
         <v-col cols="12" sm="6" md="4">
           <v-carousel height="20em" continu>
-            <v-carousel-item v-for="(item,i) in items" :key="i">
-              <v-img :src="item.src" height="100%" contain aspect-ratio="1">
-              </v-img>
-            </v-carousel-item>
+<!--            <v-carousel-item v-for="(item,i) in items" :key="i">-->
+<!--              <v-img :src="item.src" height="100%" contain aspect-ratio="1">-->
+<!--              </v-img>-->
+<!--            </v-carousel-item>-->
           </v-carousel>
         </v-col>
         <v-col cols="12" sm="6" md="4">
@@ -40,10 +40,10 @@
         </v-col>
         <v-col cols="12" sm="6" md="4">
           <v-carousel height="20em" continu>
-            <v-carousel-item v-for="(item2,i) in itemsNext" :key="i">
-              <v-img :src="item2.src" height="100%" contain aspect-ratio="1">
-              </v-img>
-            </v-carousel-item>
+<!--            <v-carousel-item v-for="(item2,i) in itemsNext" :key="i">-->
+<!--              <v-img :src="item2.src" height="100%" contain aspect-ratio="1">-->
+<!--              </v-img>-->
+<!--            </v-carousel-item>-->
           </v-carousel>
         </v-col>
       </v-row>
@@ -56,34 +56,34 @@ export default {
 
   data() {
     return {
-      items: [
-        {
-          // eslint-disable-next-line global-require
-          src: require('../../images/growup-screen01.jpg'),
-        },
-        {
-          // eslint-disable-next-line global-require
-          src: require('../../images/growup-screen03.jpg'),
-        },
-        {
-          // eslint-disable-next-line global-require
-          src: require('../../images/growup-screen01.jpg'),
-        },
-      ],
-      itemsNext: [
-        {
-          // eslint-disable-next-line global-require
-          src: require('../../images/webshop-screen01.jpg'),
-        },
-        {
-          // eslint-disable-next-line global-require
-          src: require('../../images/webshop-screen02.jpg'),
-        },
-        {
-          // eslint-disable-next-line global-require
-          src: require('../../images/webshop-screen03.jpg'),
-        },
-      ],
+      // items: [
+      //   {
+      //     // eslint-disable-next-line global-require
+      //     src: require('../../images/growup-screen01.jpg'),
+      //   },
+      //   {
+      //     // eslint-disable-next-line global-require
+      //     src: require('../../images/growup-screen03.jpg'),
+      //   },
+      //   {
+      //     // eslint-disable-next-line global-require
+      //     src: require('../../images/growup-screen01.jpg'),
+      //   },
+      // ],
+      // itemsNext: [
+      //   {
+      //     // eslint-disable-next-line global-require
+      //     src: require('../../images/webshop-screen01.jpg'),
+      //   },
+      //   {
+      //     // eslint-disable-next-line global-require
+      //     src: require('../../images/webshop-screen02.jpg'),
+      //   },
+      //   {
+      //     // eslint-disable-next-line global-require
+      //     src: require('../../images/webshop-screen03.jpg'),
+      //   },
+      // ],
     };
   },
   methods: {},

@@ -4,12 +4,17 @@ easy_admin:
       class: App\Entity\Category
 
       list:
-        actions:
-          - {name: 'edit', icon: 'pencil', label: false, css_class: 'btn btn-secondary'}
-          - {name: 'delete', icon: 'trash', label: false, css_class: 'btn btn-danger'}
+        title: "All development projects"
+        collapse_actions: true
+        actions: ['show','edit','delete']
         fields: ['id','categoryName','categoryDesc','technology']
+        filters: ['technology']
       form:
         fields:
           - {property: 'categoryName'}
-          - {property: 'categoryDesc'}
+          - {property: 'categoryDesc', type: 'text_editor',label: 'Description de la catégorie'}
+      show:
+        fields:
+          - {property: 'categoryName'}
           - {property: 'technology'}
+          - {property: 'categoryDesc', type: 'raw'}

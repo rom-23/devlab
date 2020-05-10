@@ -38,7 +38,7 @@ class Technology
   private $technoName;
 
   /**
-   * @ORM\Column(type="string", length=255, nullable=true)
+   * @ORM\Column(type="text", nullable=true)
    * @Groups({"global-search:read", "project:read"})
    */
   private $technoDesc;
@@ -134,12 +134,12 @@ class Technology
       return $this;
   }
 
-  public function getTechnoDesc(): ?string
+  public function getTechnoDesc()
   {
       return $this->technoDesc;
   }
 
-  public function setTechnoDesc(?string $technoDesc): self
+  public function setTechnoDesc($technoDesc): self
   {
       $this->technoDesc = $technoDesc;
 

@@ -2,23 +2,20 @@ easy_admin:
   entities:
     Tools:
       class: App\Entity\Tools
-
       list:
-        actions:
-          - {name: 'edit', icon: 'pencil', label: false, css_class: 'btn btn-secondary'}
-          - {name: 'delete', icon: 'trash', label: false, css_class: 'btn btn-danger'}
+        title: "All development projects"
+        collapse_actions: true
+        actions: ['show','edit','delete']
         fields: ['id','toolName','project',{ property: 'image', type: 'image', base_path: '%app.path.tools_images%',label: 'Logo'},'createdAt','updatedAt']
+        filters: ['project']
       form:
         fields:
           - {property: 'toolName'}
-          - {property: 'project'}
-          - {property: 'imageFile', type: 'vich_image', label: 'Apercu image'}
-          - {property: 'createdAt'}
-          - {property: 'updatedAt'}
+          - {property: 'imageFile', type: 'vich_image', label: 'Image'}
+          - {property: 'createdAt', type_options: { widget: 'single_text' }}
+          - {property: 'updatedAt', type_options: { widget: 'single_text' }}
       show:
         fields:
           - {property: 'toolName'}
           - {property: 'project'}
-          - {property: 'createdAt'}
-          - {property: 'updatedAt'}
           - {property: 'image', type: 'image', base_path: '%app.path.tools_images%' }
