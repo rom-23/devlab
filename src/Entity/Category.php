@@ -32,7 +32,7 @@ class Category
     private $categoryName;
 
     /**
-     * @ORM\Column(type="text", length=255, nullable=true)
+     * @ORM\Column(type="text", nullable=true)
      * @Groups({"categories:read"})
      */
     private $categoryDesc;

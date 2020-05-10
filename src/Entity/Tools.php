@@ -49,6 +49,12 @@ class Tools
   private $updatedAt;
 
   /**
+   * @ORM\Column(type="text", nullable=true)
+   * @Groups({"tools:read"})
+   */
+  private $toolDesc;
+
+  /**
    * @ORM\ManyToMany(targetEntity="App\Entity\Project", mappedBy="tools", cascade={"persist"})
    * @Groups({"tools:read"})
    */
@@ -70,6 +76,22 @@ class Tools
     $this->project = new ArrayCollection();
     $this->createdAt = new DateTime();
     $this->updatedAt = new DateTime();
+  }
+
+  /**
+   * @return mixed
+   */
+  public function getToolDesc()
+  {
+    return $this->toolDesc;
+  }
+
+  /**
+   * @param mixed $toolDesc
+   */
+  public function setToolDesc($toolDesc): void
+  {
+    $this->toolDesc = $toolDesc;
   }
 
   public function getCreatedAt(): ?\DateTimeInterface

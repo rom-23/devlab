@@ -5,6 +5,9 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Category.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/Project.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Project.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Tools.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Tools.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/user/project/Project.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/project/Project.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/user/technology/Technology.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/technology/Technology.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -324,7 +327,7 @@
       <workItem from="1588862652872" duration="39333000" />
       <workItem from="1588935781880" duration="3344000" />
       <workItem from="1588941229002" duration="13789000" />
-      <workItem from="1589012601285" duration="8347000" />
+      <workItem from="1589012601285" duration="11093000" />
     </task>
     <servers />
   </component>
@@ -341,10 +344,10 @@
     </state>
     <state x="699" y="671" width="579" height="423" key="#com.intellij.fileTypes.FileTypeChooser/1920.0.1920.1080/0.339.1920.1080@0.339.1920.1080" timestamp="1584874212096" />
     <state x="742" y="351" width="691" height="420" key="#com.intellij.fileTypes.FileTypeChooser/1920.0.1920.1080/67.27.1853.1053@67.27.1853.1053" timestamp="1589106558611" />
-    <state x="801" y="259" width="444" height="576" key="#com.intellij.ide.util.MemberChooser" timestamp="1588871919743">
+    <state x="801" y="259" width="444" height="583" key="#com.intellij.ide.util.MemberChooser" timestamp="1589116326715">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="801" y="259" width="444" height="576" key="#com.intellij.ide.util.MemberChooser/1920.0.1920.1080/67.27.1853.1053@67.27.1853.1053" timestamp="1588871919743" />
+    <state x="801" y="259" width="444" height="583" key="#com.intellij.ide.util.MemberChooser/1920.0.1920.1080/67.27.1853.1053@67.27.1853.1053" timestamp="1589116326715" />
     <state x="515" y="17" width="937" height="1060" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1588884954628">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
