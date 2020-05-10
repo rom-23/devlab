@@ -2,52 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df923285-fd74-4722-a48b-203362445aa5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/images/homepage-image.webp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/Vuetify/experience.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/Vuetify/experience.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/Vuetify/jumbotron.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/Vuetify/jumbotron.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/Vuetify/project.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/Vuetify/project.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/18157.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/background01.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/coding-924920_1920.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/growup-screen01.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/growup-screen02.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/growup-screen03.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/logo3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/webshop-screen01.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/webshop-screen02.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/webshop-screen03.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/vuejs-components/Development.vue" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/vuejs-components/Development.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/vuejs-components/Project.vue" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/vuejs-components/Project.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/admin/entities/Attachment.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/admin/entities/Attachment.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/admin/entities/Category.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/admin/entities/Category.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/admin/entities/Project.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/admin/entities/Project.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/admin/entities/Technology.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/admin/entities/Technology.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/admin/entities/Tools.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/admin/entities/Tools.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/images/project/5eb44327d89a7340718523.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/images/project/5eb4476ab6bc1103143577.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/images/project/5eb48850203aa312401117.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/images/project/5eb4885020619178342020.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/images/project/5eb4886f77b09641276303.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/images/project/5eb488f98dcc5013836856.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/images/project/5eb48d45759b4621684876.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/images/project/5eb4fa48a4e0f870526512.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/images/project/5eb51b109e31b441415331.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/images/project/5eb51b3265adf806950408.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/images/project/5eb5202ed5c06348794064.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/images/project/5eb5220cedd25583321993.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/images/project/5eb5221356c5a738228886.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/images/project/5eb522cf8ad96661675487.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/images/project/5eb52576a48da590631193.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/images/techno/5eb52830cc96e973863615.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/images/techno/5eb528a8eb38a600307046.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/images/techno/5eb529d59192b280217268.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/images/techno/5eb529db659ad116741840.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/images/techno/5eb529e0a4aa8882353100.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/images/tools/5eb52d2a74a2d808622391.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Technology.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Technology.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Tools.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Tools.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Category.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Project.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Project.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -367,7 +324,7 @@
       <workItem from="1588862652872" duration="39333000" />
       <workItem from="1588935781880" duration="3344000" />
       <workItem from="1588941229002" duration="13789000" />
-      <workItem from="1589012601285" duration="6330000" />
+      <workItem from="1589012601285" duration="8347000" />
     </task>
     <servers />
   </component>
